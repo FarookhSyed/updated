@@ -1,0 +1,3243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.7.4 on win32)" generated="20200811 19:58:21.844" rpa="false">
+<suite id="s1" name="Createnewtemplate" source="D:\test\tests\createtemplate\createnewtemplate">
+<suite id="s1-s1" name="TC CT 01 GC" source="D:\test\tests\createtemplate\createnewtemplate\TC_CT_01_GC.robot">
+<test id="s1-s1-t1" name="TC_AD01_GC">
+<kw name="commonsetup" library="common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${prod}</arg>
+<arg>${Chrome}</arg>
+</arguments>
+<msg timestamp="20200811 19:58:22.633" level="INFO">Opening browser 'gc' to base url 'https://connect.flairtechno.com/'.</msg>
+<status status="PASS" starttime="20200811 19:58:22.632" endtime="20200811 20:00:12.249"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200811 20:00:12.249" endtime="20200811 20:00:14.415"></status>
+</kw>
+<status status="PASS" starttime="20200811 19:58:22.631" endtime="20200811 20:00:14.415"></status>
+</kw>
+<kw name="To create a new template" library="keywords">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email}</arg>
+<arg>&amp;{admin_Login}[Email]</arg>
+</arguments>
+<msg timestamp="20200811 20:00:14.418" level="WARN">Accessing variable items using '&amp;{admin_Login}[Email]' syntax is deprecated. Use '${admin_Login}[Email]' instead.</msg>
+<msg timestamp="20200811 20:00:14.420" level="INFO">Typing text 'admin@veridic.co.in' into text field '//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20200811 20:00:14.417" endtime="20200811 20:00:14.947"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${pwd}</arg>
+<arg>&amp;{admin_Login}[Password]</arg>
+</arguments>
+<msg timestamp="20200811 20:00:14.948" level="WARN">Accessing variable items using '&amp;{admin_Login}[Password]' syntax is deprecated. Use '${admin_Login}[Password]' instead.</msg>
+<msg timestamp="20200811 20:00:14.954" level="INFO">Typing password into text field '//*[@id="password"]'.</msg>
+<msg timestamp="20200811 20:00:15.040" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200811 20:00:15.254" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200811 20:00:14.948" endtime="20200811 20:00:15.255"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${submit}</arg>
+</arguments>
+<msg timestamp="20200811 20:00:15.256" level="INFO">Clicking element '//*[@id="root"]/div/div/div/main/div[2]/div/form/button'.</msg>
+<status status="PASS" starttime="20200811 20:00:15.255" endtime="20200811 20:00:15.366"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:00:20.370" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:00:15.367" endtime="20200811 20:00:20.370"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${C_CREATE_TEMPLATE}</arg>
+</arguments>
+<msg timestamp="20200811 20:00:20.371" level="INFO">Opening url 'https://connect.flairtechno.com/console/createtemplate'</msg>
+<status status="PASS" starttime="20200811 20:00:20.370" endtime="20200811 20:00:24.402"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200811 20:00:26.405" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200811 20:00:24.403" endtime="20200811 20:00:26.405"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_NEW_LABEL_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:00:26.405" level="INFO">Clicking element '//*[@id="panel1c-content"]/div[1]/div/button'.</msg>
+<status status="PASS" starttime="20200811 20:00:26.405" endtime="20200811 20:00:26.813"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200811 20:00:28.816" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200811 20:00:26.813" endtime="20200811 20:00:28.816"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SELECT_SECTION_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:00:28.817" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelSection"]'.</msg>
+<status status="PASS" starttime="20200811 20:00:28.816" endtime="20200811 20:00:28.931"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200811 20:00:30.933" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200811 20:00:28.931" endtime="20200811 20:00:30.933"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SECTION_TYPE}</arg>
+</arguments>
+<msg timestamp="20200811 20:00:30.934" level="INFO">Clicking element '//*[@id="menu-newLabelSection"]/div[3]/ul/li[2]'.</msg>
+<status status="PASS" starttime="20200811 20:00:30.933" endtime="20200811 20:00:31.076"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200811 20:00:33.079" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200811 20:00:31.076" endtime="20200811 20:00:33.079"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${NAME_C}</var>
+</assign>
+<msg timestamp="20200811 20:00:33.080" level="INFO">${NAME_C} = Dxhcb</msg>
+<status status="PASS" starttime="20200811 20:00:33.079" endtime="20200811 20:00:33.080"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_NAME}</arg>
+<arg>${NAME_C}</arg>
+</arguments>
+<msg timestamp="20200811 20:00:33.080" level="INFO">Typing text 'Dxhcb' into text field '//*[@id="alert-dialog-description"]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20200811 20:00:33.080" endtime="20200811 20:00:33.498"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200811 20:00:35.499" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200811 20:00:33.499" endtime="20200811 20:00:35.499"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_TYPE_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:00:35.500" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelType"]'.</msg>
+<status status="PASS" starttime="20200811 20:00:35.499" endtime="20200811 20:00:35.613"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200811 20:00:37.614" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200811 20:00:35.614" endtime="20200811 20:00:37.614"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_SELECT1}</arg>
+</arguments>
+<msg timestamp="20200811 20:00:37.615" level="INFO">Clicking element '//*[@id="menu-newLabelType"]/div[3]/ul/li[2]'.</msg>
+<status status="PASS" starttime="20200811 20:00:37.615" endtime="20200811 20:00:37.763"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200811 20:00:39.764" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200811 20:00:37.763" endtime="20200811 20:00:39.764"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_CREATE_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:00:39.765" level="INFO">Clicking element '//*[@id="alert-dialog-description"]/form/button[1]'.</msg>
+<status status="PASS" starttime="20200811 20:00:39.764" endtime="20200811 20:00:39.895"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200811 20:00:41.898" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200811 20:00:39.895" endtime="20200811 20:00:41.898"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_NEW_LABEL_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:00:41.899" level="INFO">Clicking element '//*[@id="panel1c-content"]/div[1]/div/button'.</msg>
+<status status="PASS" starttime="20200811 20:00:41.898" endtime="20200811 20:00:41.999"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200811 20:00:44.001" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200811 20:00:41.999" endtime="20200811 20:00:44.001"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SELECT_SECTION_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:00:44.001" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelSection"]'.</msg>
+<status status="PASS" starttime="20200811 20:00:44.001" endtime="20200811 20:00:44.089"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200811 20:00:46.091" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200811 20:00:44.090" endtime="20200811 20:00:46.091"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SECTION_TYPE}</arg>
+</arguments>
+<msg timestamp="20200811 20:00:46.092" level="INFO">Clicking element '//*[@id="menu-newLabelSection"]/div[3]/ul/li[2]'.</msg>
+<status status="PASS" starttime="20200811 20:00:46.091" endtime="20200811 20:00:46.240"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200811 20:00:48.243" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200811 20:00:46.240" endtime="20200811 20:00:48.243"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${NAME_C}</var>
+</assign>
+<msg timestamp="20200811 20:00:48.244" level="INFO">${NAME_C} = UxRaJ</msg>
+<status status="PASS" starttime="20200811 20:00:48.243" endtime="20200811 20:00:48.244"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_NAME}</arg>
+<arg>${NAME_C}</arg>
+</arguments>
+<msg timestamp="20200811 20:00:48.244" level="INFO">Typing text 'UxRaJ' into text field '//*[@id="alert-dialog-description"]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20200811 20:00:48.244" endtime="20200811 20:00:48.633"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200811 20:00:50.635" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200811 20:00:48.634" endtime="20200811 20:00:50.635"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_TYPE_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:00:50.636" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelType"]'.</msg>
+<status status="PASS" starttime="20200811 20:00:50.635" endtime="20200811 20:00:50.739"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200811 20:00:52.743" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200811 20:00:50.740" endtime="20200811 20:00:52.743"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_SELECT2}</arg>
+</arguments>
+<msg timestamp="20200811 20:00:52.744" level="INFO">Clicking element '//*[@id="menu-newLabelType"]/div[3]/ul/li[3]'.</msg>
+<status status="PASS" starttime="20200811 20:00:52.743" endtime="20200811 20:00:52.909"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200811 20:00:54.912" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200811 20:00:52.909" endtime="20200811 20:00:54.912"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_CREATE_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:00:54.913" level="INFO">Clicking element '//*[@id="alert-dialog-description"]/form/button[1]'.</msg>
+<status status="PASS" starttime="20200811 20:00:54.912" endtime="20200811 20:00:55.058"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200811 20:00:57.059" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200811 20:00:55.058" endtime="20200811 20:00:57.059"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_NEW_LABEL_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:00:57.060" level="INFO">Clicking element '//*[@id="panel1c-content"]/div[1]/div/button'.</msg>
+<status status="PASS" starttime="20200811 20:00:57.059" endtime="20200811 20:00:57.162"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200811 20:00:59.164" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200811 20:00:57.163" endtime="20200811 20:00:59.164"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SELECT_SECTION_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:00:59.165" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelSection"]'.</msg>
+<status status="PASS" starttime="20200811 20:00:59.164" endtime="20200811 20:00:59.259"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200811 20:01:01.262" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200811 20:00:59.260" endtime="20200811 20:01:01.262"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SECTION_TYPE}</arg>
+</arguments>
+<msg timestamp="20200811 20:01:01.262" level="INFO">Clicking element '//*[@id="menu-newLabelSection"]/div[3]/ul/li[2]'.</msg>
+<status status="PASS" starttime="20200811 20:01:01.262" endtime="20200811 20:01:01.407"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200811 20:01:03.410" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200811 20:01:01.407" endtime="20200811 20:01:03.410"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${NAME_C}</var>
+</assign>
+<msg timestamp="20200811 20:01:03.411" level="INFO">${NAME_C} = xKiXH</msg>
+<status status="PASS" starttime="20200811 20:01:03.410" endtime="20200811 20:01:03.411"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_NAME}</arg>
+<arg>${NAME_C}</arg>
+</arguments>
+<msg timestamp="20200811 20:01:03.412" level="INFO">Typing text 'xKiXH' into text field '//*[@id="alert-dialog-description"]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20200811 20:01:03.411" endtime="20200811 20:01:03.805"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200811 20:01:05.806" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200811 20:01:03.805" endtime="20200811 20:01:05.806"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_TYPE_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:01:05.807" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelType"]'.</msg>
+<status status="PASS" starttime="20200811 20:01:05.806" endtime="20200811 20:01:05.943"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200811 20:01:07.946" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200811 20:01:05.943" endtime="20200811 20:01:07.946"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_SELECT3}</arg>
+</arguments>
+<msg timestamp="20200811 20:01:07.946" level="INFO">Clicking element '//*[@id="menu-newLabelType"]/div[3]/ul/li[4]'.</msg>
+<status status="PASS" starttime="20200811 20:01:07.946" endtime="20200811 20:01:08.092"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200811 20:01:10.094" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200811 20:01:08.093" endtime="20200811 20:01:10.094"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_CREATE_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:01:10.095" level="INFO">Clicking element '//*[@id="alert-dialog-description"]/form/button[1]'.</msg>
+<status status="PASS" starttime="20200811 20:01:10.094" endtime="20200811 20:01:10.251"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200811 20:01:12.254" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200811 20:01:10.251" endtime="20200811 20:01:12.254"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_NEW_LABEL_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:01:12.255" level="INFO">Clicking element '//*[@id="panel1c-content"]/div[1]/div/button'.</msg>
+<status status="PASS" starttime="20200811 20:01:12.254" endtime="20200811 20:01:12.351"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200811 20:01:14.353" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200811 20:01:12.352" endtime="20200811 20:01:14.353"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SELECT_SECTION_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:01:14.354" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelSection"]'.</msg>
+<status status="PASS" starttime="20200811 20:01:14.353" endtime="20200811 20:01:14.447"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:01:19.450" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:01:14.448" endtime="20200811 20:01:19.450"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SECTION_TYPE}</arg>
+</arguments>
+<msg timestamp="20200811 20:01:19.451" level="INFO">Clicking element '//*[@id="menu-newLabelSection"]/div[3]/ul/li[2]'.</msg>
+<status status="PASS" starttime="20200811 20:01:19.450" endtime="20200811 20:01:19.596"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:01:24.598" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:01:19.596" endtime="20200811 20:01:24.598"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${NAME_C}</var>
+</assign>
+<msg timestamp="20200811 20:01:24.599" level="INFO">${NAME_C} = aEvLm</msg>
+<status status="PASS" starttime="20200811 20:01:24.598" endtime="20200811 20:01:24.599"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_NAME}</arg>
+<arg>${NAME_C}</arg>
+</arguments>
+<msg timestamp="20200811 20:01:24.599" level="INFO">Typing text 'aEvLm' into text field '//*[@id="alert-dialog-description"]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20200811 20:01:24.599" endtime="20200811 20:01:25.019"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200811 20:01:28.021" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200811 20:01:25.019" endtime="20200811 20:01:28.021"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_TYPE_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:01:28.022" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelType"]'.</msg>
+<status status="PASS" starttime="20200811 20:01:28.021" endtime="20200811 20:01:28.124"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:01:33.126" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:01:28.125" endtime="20200811 20:01:33.126"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_SELECT4}</arg>
+</arguments>
+<msg timestamp="20200811 20:01:33.127" level="INFO">Clicking element '//*[@id="menu-newLabelType"]/div[3]/ul/li[5]'.</msg>
+<status status="PASS" starttime="20200811 20:01:33.126" endtime="20200811 20:01:33.280"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:01:38.283" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:01:33.280" endtime="20200811 20:01:38.283"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_CREATE_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:01:38.284" level="INFO">Clicking element '//*[@id="alert-dialog-description"]/form/button[1]'.</msg>
+<status status="PASS" starttime="20200811 20:01:38.283" endtime="20200811 20:01:38.467"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:01:43.469" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:01:38.467" endtime="20200811 20:01:43.469"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_NEW_LABEL_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:01:43.470" level="INFO">Clicking element '//*[@id="panel1c-content"]/div[1]/div/button'.</msg>
+<status status="PASS" starttime="20200811 20:01:43.469" endtime="20200811 20:01:43.597"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:01:48.600" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:01:43.597" endtime="20200811 20:01:48.600"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SELECT_SECTION_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:01:48.601" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelSection"]'.</msg>
+<status status="PASS" starttime="20200811 20:01:48.600" endtime="20200811 20:01:48.699"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:01:53.701" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:01:48.700" endtime="20200811 20:01:53.701"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SECTION_TYPE}</arg>
+</arguments>
+<msg timestamp="20200811 20:01:53.702" level="INFO">Clicking element '//*[@id="menu-newLabelSection"]/div[3]/ul/li[2]'.</msg>
+<status status="PASS" starttime="20200811 20:01:53.701" endtime="20200811 20:01:53.844"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:01:58.845" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:01:53.845" endtime="20200811 20:01:58.845"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${NAME_C}</var>
+</assign>
+<msg timestamp="20200811 20:01:58.846" level="INFO">${NAME_C} = RZhdc</msg>
+<status status="PASS" starttime="20200811 20:01:58.845" endtime="20200811 20:01:58.846"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_NAME}</arg>
+<arg>${NAME_C}</arg>
+</arguments>
+<msg timestamp="20200811 20:01:58.846" level="INFO">Typing text 'RZhdc' into text field '//*[@id="alert-dialog-description"]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20200811 20:01:58.846" endtime="20200811 20:01:59.296"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200811 20:02:02.298" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200811 20:01:59.296" endtime="20200811 20:02:02.298"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_TYPE_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:02:02.299" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelType"]'.</msg>
+<status status="PASS" starttime="20200811 20:02:02.298" endtime="20200811 20:02:02.405"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:02:07.407" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:02:02.405" endtime="20200811 20:02:07.407"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_SELECT5}</arg>
+</arguments>
+<msg timestamp="20200811 20:02:07.407" level="INFO">Clicking element '//*[@id="menu-newLabelType"]/div[3]/ul/li[6]'.</msg>
+<status status="PASS" starttime="20200811 20:02:07.407" endtime="20200811 20:02:07.565"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:02:12.566" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:02:07.566" endtime="20200811 20:02:12.566"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_CREATE_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:02:12.567" level="INFO">Clicking element '//*[@id="alert-dialog-description"]/form/button[1]'.</msg>
+<status status="PASS" starttime="20200811 20:02:12.566" endtime="20200811 20:02:12.700"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:02:17.703" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:02:12.700" endtime="20200811 20:02:17.703"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_NEW_LABEL_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:02:17.704" level="INFO">Clicking element '//*[@id="panel1c-content"]/div[1]/div/button'.</msg>
+<status status="PASS" starttime="20200811 20:02:17.703" endtime="20200811 20:02:17.810"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:02:22.812" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:02:17.811" endtime="20200811 20:02:22.812"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SELECT_SECTION_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:02:22.813" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelSection"]'.</msg>
+<status status="PASS" starttime="20200811 20:02:22.812" endtime="20200811 20:02:22.923"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:02:27.926" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:02:22.924" endtime="20200811 20:02:27.926"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SECTION_TYPE1}</arg>
+</arguments>
+<msg timestamp="20200811 20:02:27.927" level="INFO">Clicking element '//*[@id="menu-newLabelSection"]/div[3]/ul/li[3]'.</msg>
+<status status="PASS" starttime="20200811 20:02:27.926" endtime="20200811 20:02:28.100"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:02:33.101" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:02:28.100" endtime="20200811 20:02:33.101"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${NAME_C}</var>
+</assign>
+<msg timestamp="20200811 20:02:33.102" level="INFO">${NAME_C} = IIniq</msg>
+<status status="PASS" starttime="20200811 20:02:33.101" endtime="20200811 20:02:33.102"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_NAME}</arg>
+<arg>${NAME_C}</arg>
+</arguments>
+<msg timestamp="20200811 20:02:33.103" level="INFO">Typing text 'IIniq' into text field '//*[@id="alert-dialog-description"]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20200811 20:02:33.103" endtime="20200811 20:02:33.549"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200811 20:02:36.551" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200811 20:02:33.550" endtime="20200811 20:02:36.551"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_TYPE_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:02:36.552" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelType"]'.</msg>
+<status status="PASS" starttime="20200811 20:02:36.551" endtime="20200811 20:02:36.652"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:02:41.655" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:02:36.653" endtime="20200811 20:02:41.655"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_SELECT1}</arg>
+</arguments>
+<msg timestamp="20200811 20:02:41.656" level="INFO">Clicking element '//*[@id="menu-newLabelType"]/div[3]/ul/li[2]'.</msg>
+<status status="PASS" starttime="20200811 20:02:41.655" endtime="20200811 20:02:41.802"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:02:46.804" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:02:41.802" endtime="20200811 20:02:46.804"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_CREATE_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:02:46.805" level="INFO">Clicking element '//*[@id="alert-dialog-description"]/form/button[1]'.</msg>
+<status status="PASS" starttime="20200811 20:02:46.804" endtime="20200811 20:02:46.960"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:02:51.963" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:02:46.960" endtime="20200811 20:02:51.963"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_NEW_LABEL_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:02:51.964" level="INFO">Clicking element '//*[@id="panel1c-content"]/div[1]/div/button'.</msg>
+<status status="PASS" starttime="20200811 20:02:51.963" endtime="20200811 20:02:52.060"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:02:57.063" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:02:52.060" endtime="20200811 20:02:57.063"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SELECT_SECTION_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:02:57.064" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelSection"]'.</msg>
+<status status="PASS" starttime="20200811 20:02:57.063" endtime="20200811 20:02:57.156"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:03:02.159" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:02:57.157" endtime="20200811 20:03:02.159"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SECTION_TYPE1}</arg>
+</arguments>
+<msg timestamp="20200811 20:03:02.160" level="INFO">Clicking element '//*[@id="menu-newLabelSection"]/div[3]/ul/li[3]'.</msg>
+<status status="PASS" starttime="20200811 20:03:02.159" endtime="20200811 20:03:02.306"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:03:07.307" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:03:02.306" endtime="20200811 20:03:07.307"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${NAME_C}</var>
+</assign>
+<msg timestamp="20200811 20:03:07.308" level="INFO">${NAME_C} = IRqjR</msg>
+<status status="PASS" starttime="20200811 20:03:07.308" endtime="20200811 20:03:07.308"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_NAME}</arg>
+<arg>${NAME_C}</arg>
+</arguments>
+<msg timestamp="20200811 20:03:07.309" level="INFO">Typing text 'IRqjR' into text field '//*[@id="alert-dialog-description"]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20200811 20:03:07.308" endtime="20200811 20:03:07.743"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200811 20:03:10.745" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200811 20:03:07.744" endtime="20200811 20:03:10.745"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_TYPE_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:03:10.745" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelType"]'.</msg>
+<status status="PASS" starttime="20200811 20:03:10.745" endtime="20200811 20:03:10.851"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:03:15.852" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:03:10.851" endtime="20200811 20:03:15.852"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_SELECT2}</arg>
+</arguments>
+<msg timestamp="20200811 20:03:15.853" level="INFO">Clicking element '//*[@id="menu-newLabelType"]/div[3]/ul/li[3]'.</msg>
+<status status="PASS" starttime="20200811 20:03:15.852" endtime="20200811 20:03:16.010"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:03:21.011" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:03:16.010" endtime="20200811 20:03:21.011"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_CREATE_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:03:21.012" level="INFO">Clicking element '//*[@id="alert-dialog-description"]/form/button[1]'.</msg>
+<status status="PASS" starttime="20200811 20:03:21.011" endtime="20200811 20:03:21.178"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:03:26.180" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:03:21.178" endtime="20200811 20:03:26.180"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_NEW_LABEL_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:03:26.181" level="INFO">Clicking element '//*[@id="panel1c-content"]/div[1]/div/button'.</msg>
+<status status="PASS" starttime="20200811 20:03:26.180" endtime="20200811 20:03:26.295"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:03:31.297" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:03:26.296" endtime="20200811 20:03:31.297"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SELECT_SECTION_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:03:31.298" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelSection"]'.</msg>
+<status status="PASS" starttime="20200811 20:03:31.297" endtime="20200811 20:03:31.391"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:03:36.394" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:03:31.392" endtime="20200811 20:03:36.394"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SECTION_TYPE1}</arg>
+</arguments>
+<msg timestamp="20200811 20:03:36.395" level="INFO">Clicking element '//*[@id="menu-newLabelSection"]/div[3]/ul/li[3]'.</msg>
+<status status="PASS" starttime="20200811 20:03:36.394" endtime="20200811 20:03:36.542"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:03:41.544" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:03:36.543" endtime="20200811 20:03:41.544"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${NAME_C}</var>
+</assign>
+<msg timestamp="20200811 20:03:41.545" level="INFO">${NAME_C} = OmDmi</msg>
+<status status="PASS" starttime="20200811 20:03:41.544" endtime="20200811 20:03:41.545"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_NAME}</arg>
+<arg>${NAME_C}</arg>
+</arguments>
+<msg timestamp="20200811 20:03:41.545" level="INFO">Typing text 'OmDmi' into text field '//*[@id="alert-dialog-description"]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20200811 20:03:41.545" endtime="20200811 20:03:42.027"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200811 20:03:45.029" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200811 20:03:42.027" endtime="20200811 20:03:45.029"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_TYPE_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:03:45.029" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelType"]'.</msg>
+<status status="PASS" starttime="20200811 20:03:45.029" endtime="20200811 20:03:45.138"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:03:50.140" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:03:45.138" endtime="20200811 20:03:50.140"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_SELECT3}</arg>
+</arguments>
+<msg timestamp="20200811 20:03:50.141" level="INFO">Clicking element '//*[@id="menu-newLabelType"]/div[3]/ul/li[4]'.</msg>
+<status status="PASS" starttime="20200811 20:03:50.140" endtime="20200811 20:03:50.331"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:03:55.334" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:03:50.331" endtime="20200811 20:03:55.334"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_CREATE_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:03:55.335" level="INFO">Clicking element '//*[@id="alert-dialog-description"]/form/button[1]'.</msg>
+<status status="PASS" starttime="20200811 20:03:55.334" endtime="20200811 20:03:55.486"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:04:00.488" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:03:55.486" endtime="20200811 20:04:00.488"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_NEW_LABEL_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:04:00.489" level="INFO">Clicking element '//*[@id="panel1c-content"]/div[1]/div/button'.</msg>
+<status status="PASS" starttime="20200811 20:04:00.488" endtime="20200811 20:04:00.588"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:04:05.589" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:04:00.588" endtime="20200811 20:04:05.589"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SELECT_SECTION_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:04:05.590" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelSection"]'.</msg>
+<status status="PASS" starttime="20200811 20:04:05.589" endtime="20200811 20:04:05.695"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:04:10.697" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:04:05.695" endtime="20200811 20:04:10.697"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SECTION_TYPE1}</arg>
+</arguments>
+<msg timestamp="20200811 20:04:10.697" level="INFO">Clicking element '//*[@id="menu-newLabelSection"]/div[3]/ul/li[3]'.</msg>
+<status status="PASS" starttime="20200811 20:04:10.697" endtime="20200811 20:04:10.847"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:04:15.850" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:04:10.848" endtime="20200811 20:04:15.850"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${NAME_C}</var>
+</assign>
+<msg timestamp="20200811 20:04:15.851" level="INFO">${NAME_C} = KAYdz</msg>
+<status status="PASS" starttime="20200811 20:04:15.850" endtime="20200811 20:04:15.851"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_NAME}</arg>
+<arg>${NAME_C}</arg>
+</arguments>
+<msg timestamp="20200811 20:04:15.851" level="INFO">Typing text 'KAYdz' into text field '//*[@id="alert-dialog-description"]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20200811 20:04:15.851" endtime="20200811 20:04:16.285"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200811 20:04:19.287" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200811 20:04:16.285" endtime="20200811 20:04:19.287"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_TYPE_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:04:19.288" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelType"]'.</msg>
+<status status="PASS" starttime="20200811 20:04:19.287" endtime="20200811 20:04:19.401"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:04:24.404" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:04:19.401" endtime="20200811 20:04:24.404"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_SELECT4}</arg>
+</arguments>
+<msg timestamp="20200811 20:04:24.404" level="INFO">Clicking element '//*[@id="menu-newLabelType"]/div[3]/ul/li[5]'.</msg>
+<status status="PASS" starttime="20200811 20:04:24.404" endtime="20200811 20:04:24.544"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:04:29.546" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:04:24.544" endtime="20200811 20:04:29.546"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_CREATE_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:04:29.547" level="INFO">Clicking element '//*[@id="alert-dialog-description"]/form/button[1]'.</msg>
+<status status="PASS" starttime="20200811 20:04:29.546" endtime="20200811 20:04:29.708"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:04:34.710" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:04:29.708" endtime="20200811 20:04:34.710"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_NEW_LABEL_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:04:34.710" level="INFO">Clicking element '//*[@id="panel1c-content"]/div[1]/div/button'.</msg>
+<status status="PASS" starttime="20200811 20:04:34.710" endtime="20200811 20:04:34.811"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:04:39.813" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:04:34.811" endtime="20200811 20:04:39.813"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SELECT_SECTION_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:04:39.814" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelSection"]'.</msg>
+<status status="PASS" starttime="20200811 20:04:39.813" endtime="20200811 20:04:39.919"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:04:44.922" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:04:39.920" endtime="20200811 20:04:44.922"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SECTION_TYPE1}</arg>
+</arguments>
+<msg timestamp="20200811 20:04:44.923" level="INFO">Clicking element '//*[@id="menu-newLabelSection"]/div[3]/ul/li[3]'.</msg>
+<status status="PASS" starttime="20200811 20:04:44.922" endtime="20200811 20:04:45.067"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:04:50.069" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:04:45.067" endtime="20200811 20:04:50.069"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${NAME_C}</var>
+</assign>
+<msg timestamp="20200811 20:04:50.070" level="INFO">${NAME_C} = hfqjb</msg>
+<status status="PASS" starttime="20200811 20:04:50.069" endtime="20200811 20:04:50.070"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_NAME}</arg>
+<arg>${NAME_C}</arg>
+</arguments>
+<msg timestamp="20200811 20:04:50.070" level="INFO">Typing text 'hfqjb' into text field '//*[@id="alert-dialog-description"]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20200811 20:04:50.070" endtime="20200811 20:04:50.551"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200811 20:04:53.553" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200811 20:04:50.551" endtime="20200811 20:04:53.553"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_TYPE_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:04:53.554" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelType"]'.</msg>
+<status status="PASS" starttime="20200811 20:04:53.553" endtime="20200811 20:04:53.654"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:04:58.656" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:04:53.654" endtime="20200811 20:04:58.656"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_SELECT5}</arg>
+</arguments>
+<msg timestamp="20200811 20:04:58.657" level="INFO">Clicking element '//*[@id="menu-newLabelType"]/div[3]/ul/li[6]'.</msg>
+<status status="PASS" starttime="20200811 20:04:58.656" endtime="20200811 20:04:58.805"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:05:03.807" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:04:58.805" endtime="20200811 20:05:03.807"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_CREATE_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:05:03.808" level="INFO">Clicking element '//*[@id="alert-dialog-description"]/form/button[1]'.</msg>
+<status status="PASS" starttime="20200811 20:05:03.807" endtime="20200811 20:05:04.018"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:05:09.020" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:05:04.018" endtime="20200811 20:05:09.020"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_NEW_LABEL_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:05:09.021" level="INFO">Clicking element '//*[@id="panel1c-content"]/div[1]/div/button'.</msg>
+<status status="PASS" starttime="20200811 20:05:09.020" endtime="20200811 20:05:09.133"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:05:14.135" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:05:09.133" endtime="20200811 20:05:14.135"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SELECT_SECTION_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:05:14.135" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelSection"]'.</msg>
+<status status="PASS" starttime="20200811 20:05:14.135" endtime="20200811 20:05:14.237"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:05:19.239" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:05:14.237" endtime="20200811 20:05:19.239"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SECTION_TYPE2}</arg>
+</arguments>
+<msg timestamp="20200811 20:05:19.240" level="INFO">Clicking element '//*[@id="menu-newLabelSection"]/div[3]/ul/li[4]'.</msg>
+<status status="PASS" starttime="20200811 20:05:19.239" endtime="20200811 20:05:19.354"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:05:24.356" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:05:19.354" endtime="20200811 20:05:24.356"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${NAME_C}</var>
+</assign>
+<msg timestamp="20200811 20:05:24.357" level="INFO">${NAME_C} = MaeXS</msg>
+<status status="PASS" starttime="20200811 20:05:24.356" endtime="20200811 20:05:24.357"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_NAME}</arg>
+<arg>${NAME_C}</arg>
+</arguments>
+<msg timestamp="20200811 20:05:24.357" level="INFO">Typing text 'MaeXS' into text field '//*[@id="alert-dialog-description"]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20200811 20:05:24.357" endtime="20200811 20:05:24.823"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200811 20:05:27.825" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200811 20:05:24.823" endtime="20200811 20:05:27.825"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_TYPE_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:05:27.826" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelType"]'.</msg>
+<status status="PASS" starttime="20200811 20:05:27.825" endtime="20200811 20:05:27.926"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:05:32.928" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:05:27.926" endtime="20200811 20:05:32.928"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_SELECT1}</arg>
+</arguments>
+<msg timestamp="20200811 20:05:32.929" level="INFO">Clicking element '//*[@id="menu-newLabelType"]/div[3]/ul/li[2]'.</msg>
+<status status="PASS" starttime="20200811 20:05:32.928" endtime="20200811 20:05:33.072"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:05:38.075" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:05:33.073" endtime="20200811 20:05:38.075"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_CREATE_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:05:38.076" level="INFO">Clicking element '//*[@id="alert-dialog-description"]/form/button[1]'.</msg>
+<status status="PASS" starttime="20200811 20:05:38.075" endtime="20200811 20:05:38.234"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:05:43.234" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:05:38.234" endtime="20200811 20:05:43.234"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_NEW_LABEL_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:05:43.235" level="INFO">Clicking element '//*[@id="panel1c-content"]/div[1]/div/button'.</msg>
+<status status="PASS" starttime="20200811 20:05:43.234" endtime="20200811 20:05:43.349"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:05:48.352" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:05:43.350" endtime="20200811 20:05:48.352"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SELECT_SECTION_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:05:48.353" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelSection"]'.</msg>
+<status status="PASS" starttime="20200811 20:05:48.352" endtime="20200811 20:05:48.469"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:05:53.471" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:05:48.469" endtime="20200811 20:05:53.471"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SECTION_TYPE2}</arg>
+</arguments>
+<msg timestamp="20200811 20:05:53.472" level="INFO">Clicking element '//*[@id="menu-newLabelSection"]/div[3]/ul/li[4]'.</msg>
+<status status="PASS" starttime="20200811 20:05:53.471" endtime="20200811 20:05:53.623"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:05:58.626" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:05:53.623" endtime="20200811 20:05:58.626"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${NAME_C}</var>
+</assign>
+<msg timestamp="20200811 20:05:58.627" level="INFO">${NAME_C} = gGgLU</msg>
+<status status="PASS" starttime="20200811 20:05:58.626" endtime="20200811 20:05:58.627"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_NAME}</arg>
+<arg>${NAME_C}</arg>
+</arguments>
+<msg timestamp="20200811 20:05:58.627" level="INFO">Typing text 'gGgLU' into text field '//*[@id="alert-dialog-description"]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20200811 20:05:58.627" endtime="20200811 20:05:59.098"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200811 20:06:02.101" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200811 20:05:59.098" endtime="20200811 20:06:02.101"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_TYPE_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:06:02.102" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelType"]'.</msg>
+<status status="PASS" starttime="20200811 20:06:02.101" endtime="20200811 20:06:02.250"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:06:07.253" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:06:02.251" endtime="20200811 20:06:07.253"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_SELECT2}</arg>
+</arguments>
+<msg timestamp="20200811 20:06:07.254" level="INFO">Clicking element '//*[@id="menu-newLabelType"]/div[3]/ul/li[3]'.</msg>
+<status status="PASS" starttime="20200811 20:06:07.253" endtime="20200811 20:06:07.415"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:06:12.417" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:06:07.416" endtime="20200811 20:06:12.417"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_CREATE_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:06:12.417" level="INFO">Clicking element '//*[@id="alert-dialog-description"]/form/button[1]'.</msg>
+<status status="PASS" starttime="20200811 20:06:12.417" endtime="20200811 20:06:12.564"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:06:17.566" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:06:12.565" endtime="20200811 20:06:17.566"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_NEW_LABEL_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:06:17.567" level="INFO">Clicking element '//*[@id="panel1c-content"]/div[1]/div/button'.</msg>
+<status status="PASS" starttime="20200811 20:06:17.566" endtime="20200811 20:06:17.730"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:06:22.734" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:06:17.731" endtime="20200811 20:06:22.734"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SELECT_SECTION_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:06:22.735" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelSection"]'.</msg>
+<status status="PASS" starttime="20200811 20:06:22.734" endtime="20200811 20:06:22.828"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:06:27.831" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:06:22.828" endtime="20200811 20:06:27.831"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SECTION_TYPE2}</arg>
+</arguments>
+<msg timestamp="20200811 20:06:27.832" level="INFO">Clicking element '//*[@id="menu-newLabelSection"]/div[3]/ul/li[4]'.</msg>
+<status status="PASS" starttime="20200811 20:06:27.831" endtime="20200811 20:06:27.985"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:06:32.988" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:06:27.986" endtime="20200811 20:06:32.988"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${NAME_C}</var>
+</assign>
+<msg timestamp="20200811 20:06:32.989" level="INFO">${NAME_C} = cbFVN</msg>
+<status status="PASS" starttime="20200811 20:06:32.989" endtime="20200811 20:06:32.989"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_NAME}</arg>
+<arg>${NAME_C}</arg>
+</arguments>
+<msg timestamp="20200811 20:06:32.990" level="INFO">Typing text 'cbFVN' into text field '//*[@id="alert-dialog-description"]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20200811 20:06:32.990" endtime="20200811 20:06:33.457"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200811 20:06:36.459" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200811 20:06:33.457" endtime="20200811 20:06:36.459"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_TYPE_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:06:36.460" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelType"]'.</msg>
+<status status="PASS" starttime="20200811 20:06:36.459" endtime="20200811 20:06:36.567"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:06:41.570" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:06:36.567" endtime="20200811 20:06:41.570"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_SELECT3}</arg>
+</arguments>
+<msg timestamp="20200811 20:06:41.571" level="INFO">Clicking element '//*[@id="menu-newLabelType"]/div[3]/ul/li[4]'.</msg>
+<status status="PASS" starttime="20200811 20:06:41.570" endtime="20200811 20:06:41.720"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:06:46.722" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:06:41.721" endtime="20200811 20:06:46.722"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_CREATE_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:06:46.722" level="INFO">Clicking element '//*[@id="alert-dialog-description"]/form/button[1]'.</msg>
+<status status="PASS" starttime="20200811 20:06:46.722" endtime="20200811 20:06:46.893"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:06:51.896" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:06:46.893" endtime="20200811 20:06:51.896"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_NEW_LABEL_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:06:51.896" level="INFO">Clicking element '//*[@id="panel1c-content"]/div[1]/div/button'.</msg>
+<status status="PASS" starttime="20200811 20:06:51.896" endtime="20200811 20:06:51.994"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:06:56.996" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:06:51.994" endtime="20200811 20:06:56.996"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SELECT_SECTION_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:06:56.997" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelSection"]'.</msg>
+<status status="PASS" starttime="20200811 20:06:56.996" endtime="20200811 20:06:57.100"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:07:02.103" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:06:57.101" endtime="20200811 20:07:02.103"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SECTION_TYPE2}</arg>
+</arguments>
+<msg timestamp="20200811 20:07:02.104" level="INFO">Clicking element '//*[@id="menu-newLabelSection"]/div[3]/ul/li[4]'.</msg>
+<status status="PASS" starttime="20200811 20:07:02.103" endtime="20200811 20:07:02.252"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:07:07.254" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:07:02.253" endtime="20200811 20:07:07.254"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${NAME_C}</var>
+</assign>
+<msg timestamp="20200811 20:07:07.255" level="INFO">${NAME_C} = viMma</msg>
+<status status="PASS" starttime="20200811 20:07:07.254" endtime="20200811 20:07:07.255"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_NAME}</arg>
+<arg>${NAME_C}</arg>
+</arguments>
+<msg timestamp="20200811 20:07:07.255" level="INFO">Typing text 'viMma' into text field '//*[@id="alert-dialog-description"]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20200811 20:07:07.255" endtime="20200811 20:07:07.749"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200811 20:07:10.751" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200811 20:07:07.749" endtime="20200811 20:07:10.751"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_TYPE_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:07:10.752" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelType"]'.</msg>
+<status status="PASS" starttime="20200811 20:07:10.751" endtime="20200811 20:07:10.855"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:07:15.858" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:07:10.855" endtime="20200811 20:07:15.858"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_SELECT4}</arg>
+</arguments>
+<msg timestamp="20200811 20:07:15.859" level="INFO">Clicking element '//*[@id="menu-newLabelType"]/div[3]/ul/li[5]'.</msg>
+<status status="PASS" starttime="20200811 20:07:15.858" endtime="20200811 20:07:16.010"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:07:21.013" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:07:16.011" endtime="20200811 20:07:21.013"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_CREATE_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:07:21.014" level="INFO">Clicking element '//*[@id="alert-dialog-description"]/form/button[1]'.</msg>
+<status status="PASS" starttime="20200811 20:07:21.013" endtime="20200811 20:07:21.195"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:07:26.195" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:07:21.195" endtime="20200811 20:07:26.195"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_NEW_LABEL_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:07:26.195" level="INFO">Clicking element '//*[@id="panel1c-content"]/div[1]/div/button'.</msg>
+<status status="PASS" starttime="20200811 20:07:26.195" endtime="20200811 20:07:26.342"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:07:31.345" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:07:26.343" endtime="20200811 20:07:31.345"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SELECT_SECTION_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:07:31.346" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelSection"]'.</msg>
+<status status="PASS" starttime="20200811 20:07:31.345" endtime="20200811 20:07:31.452"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:07:36.455" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:07:31.452" endtime="20200811 20:07:36.455"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SECTION_TYPE2}</arg>
+</arguments>
+<msg timestamp="20200811 20:07:36.455" level="INFO">Clicking element '//*[@id="menu-newLabelSection"]/div[3]/ul/li[4]'.</msg>
+<status status="PASS" starttime="20200811 20:07:36.455" endtime="20200811 20:07:36.610"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:07:41.613" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:07:36.610" endtime="20200811 20:07:41.613"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${NAME_C}</var>
+</assign>
+<msg timestamp="20200811 20:07:41.614" level="INFO">${NAME_C} = ebLwv</msg>
+<status status="PASS" starttime="20200811 20:07:41.613" endtime="20200811 20:07:41.614"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_NAME}</arg>
+<arg>${NAME_C}</arg>
+</arguments>
+<msg timestamp="20200811 20:07:41.614" level="INFO">Typing text 'ebLwv' into text field '//*[@id="alert-dialog-description"]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20200811 20:07:41.614" endtime="20200811 20:07:42.092"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200811 20:07:45.093" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200811 20:07:42.092" endtime="20200811 20:07:45.093"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_TYPE_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:07:45.096" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelType"]'.</msg>
+<status status="PASS" starttime="20200811 20:07:45.094" endtime="20200811 20:07:45.258"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:07:50.261" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:07:45.259" endtime="20200811 20:07:50.261"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_SELECT5}</arg>
+</arguments>
+<msg timestamp="20200811 20:07:50.261" level="INFO">Clicking element '//*[@id="menu-newLabelType"]/div[3]/ul/li[6]'.</msg>
+<status status="PASS" starttime="20200811 20:07:50.261" endtime="20200811 20:07:50.407"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:07:55.407" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:07:50.407" endtime="20200811 20:07:55.407"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_CREATE_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:07:55.407" level="INFO">Clicking element '//*[@id="alert-dialog-description"]/form/button[1]'.</msg>
+<status status="PASS" starttime="20200811 20:07:55.407" endtime="20200811 20:07:55.569"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:08:00.571" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:07:55.569" endtime="20200811 20:08:00.571"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_NEW_LABEL_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:08:00.572" level="INFO">Clicking element '//*[@id="panel1c-content"]/div[1]/div/button'.</msg>
+<status status="PASS" starttime="20200811 20:08:00.571" endtime="20200811 20:08:00.696"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:08:05.699" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:08:00.697" endtime="20200811 20:08:05.699"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SELECT_SECTION_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:08:05.700" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelSection"]'.</msg>
+<status status="PASS" starttime="20200811 20:08:05.699" endtime="20200811 20:08:05.810"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:08:10.813" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:08:05.811" endtime="20200811 20:08:10.813"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SECTION_TYPE3}</arg>
+</arguments>
+<msg timestamp="20200811 20:08:10.814" level="INFO">Clicking element '//*[@id="menu-newLabelSection"]/div[3]/ul/li[5]'.</msg>
+<status status="PASS" starttime="20200811 20:08:10.813" endtime="20200811 20:08:11.014"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:08:16.016" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:08:11.014" endtime="20200811 20:08:16.016"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${NAME_C}</var>
+</assign>
+<msg timestamp="20200811 20:08:16.017" level="INFO">${NAME_C} = YHvyw</msg>
+<status status="PASS" starttime="20200811 20:08:16.016" endtime="20200811 20:08:16.017"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_NAME}</arg>
+<arg>${NAME_C}</arg>
+</arguments>
+<msg timestamp="20200811 20:08:16.018" level="INFO">Typing text 'YHvyw' into text field '//*[@id="alert-dialog-description"]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20200811 20:08:16.017" endtime="20200811 20:08:16.614"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200811 20:08:19.616" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200811 20:08:16.615" endtime="20200811 20:08:19.616"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_TYPE_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:08:19.617" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelType"]'.</msg>
+<status status="PASS" starttime="20200811 20:08:19.616" endtime="20200811 20:08:19.732"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:08:24.733" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:08:19.732" endtime="20200811 20:08:24.733"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_SELECT1}</arg>
+</arguments>
+<msg timestamp="20200811 20:08:24.734" level="INFO">Clicking element '//*[@id="menu-newLabelType"]/div[3]/ul/li[2]'.</msg>
+<status status="PASS" starttime="20200811 20:08:24.733" endtime="20200811 20:08:24.928"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:08:29.931" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:08:24.929" endtime="20200811 20:08:29.931"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_CREATE_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:08:29.932" level="INFO">Clicking element '//*[@id="alert-dialog-description"]/form/button[1]'.</msg>
+<status status="PASS" starttime="20200811 20:08:29.931" endtime="20200811 20:08:30.142"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:08:35.144" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:08:30.142" endtime="20200811 20:08:35.144"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_NEW_LABEL_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:08:35.144" level="INFO">Clicking element '//*[@id="panel1c-content"]/div[1]/div/button'.</msg>
+<status status="PASS" starttime="20200811 20:08:35.144" endtime="20200811 20:08:35.300"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:08:40.301" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:08:35.300" endtime="20200811 20:08:40.301"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SELECT_SECTION_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:08:40.302" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelSection"]'.</msg>
+<status status="PASS" starttime="20200811 20:08:40.301" endtime="20200811 20:08:40.411"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:08:45.413" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:08:40.411" endtime="20200811 20:08:45.413"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SECTION_TYPE3}</arg>
+</arguments>
+<msg timestamp="20200811 20:08:45.414" level="INFO">Clicking element '//*[@id="menu-newLabelSection"]/div[3]/ul/li[5]'.</msg>
+<status status="PASS" starttime="20200811 20:08:45.413" endtime="20200811 20:08:45.639"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:08:50.642" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:08:45.640" endtime="20200811 20:08:50.642"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${NAME_C}</var>
+</assign>
+<msg timestamp="20200811 20:08:50.643" level="INFO">${NAME_C} = OcyFL</msg>
+<status status="PASS" starttime="20200811 20:08:50.643" endtime="20200811 20:08:50.643"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_NAME}</arg>
+<arg>${NAME_C}</arg>
+</arguments>
+<msg timestamp="20200811 20:08:50.644" level="INFO">Typing text 'OcyFL' into text field '//*[@id="alert-dialog-description"]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20200811 20:08:50.644" endtime="20200811 20:08:51.261"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200811 20:08:54.264" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200811 20:08:51.261" endtime="20200811 20:08:54.264"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_TYPE_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:08:54.265" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelType"]'.</msg>
+<status status="PASS" starttime="20200811 20:08:54.265" endtime="20200811 20:08:54.384"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:08:59.385" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:08:54.384" endtime="20200811 20:08:59.385"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_SELECT2}</arg>
+</arguments>
+<msg timestamp="20200811 20:08:59.386" level="INFO">Clicking element '//*[@id="menu-newLabelType"]/div[3]/ul/li[3]'.</msg>
+<status status="PASS" starttime="20200811 20:08:59.386" endtime="20200811 20:08:59.591"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:09:04.594" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:08:59.592" endtime="20200811 20:09:04.594"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_CREATE_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:09:04.595" level="INFO">Clicking element '//*[@id="alert-dialog-description"]/form/button[1]'.</msg>
+<status status="PASS" starttime="20200811 20:09:04.594" endtime="20200811 20:09:04.797"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:09:09.799" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:09:04.798" endtime="20200811 20:09:09.799"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_NEW_LABEL_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:09:09.800" level="INFO">Clicking element '//*[@id="panel1c-content"]/div[1]/div/button'.</msg>
+<status status="PASS" starttime="20200811 20:09:09.799" endtime="20200811 20:09:09.990"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:09:14.992" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:09:09.990" endtime="20200811 20:09:14.992"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SELECT_SECTION_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:09:14.994" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelSection"]'.</msg>
+<status status="PASS" starttime="20200811 20:09:14.993" endtime="20200811 20:09:15.123"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:09:20.125" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:09:15.123" endtime="20200811 20:09:20.125"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SECTION_TYPE3}</arg>
+</arguments>
+<msg timestamp="20200811 20:09:20.127" level="INFO">Clicking element '//*[@id="menu-newLabelSection"]/div[3]/ul/li[5]'.</msg>
+<status status="PASS" starttime="20200811 20:09:20.126" endtime="20200811 20:09:20.333"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:09:25.334" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:09:20.333" endtime="20200811 20:09:25.334"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${NAME_C}</var>
+</assign>
+<msg timestamp="20200811 20:09:25.335" level="INFO">${NAME_C} = gcCte</msg>
+<status status="PASS" starttime="20200811 20:09:25.334" endtime="20200811 20:09:25.335"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_NAME}</arg>
+<arg>${NAME_C}</arg>
+</arguments>
+<msg timestamp="20200811 20:09:25.336" level="INFO">Typing text 'gcCte' into text field '//*[@id="alert-dialog-description"]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20200811 20:09:25.335" endtime="20200811 20:09:25.919"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200811 20:09:28.920" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200811 20:09:25.920" endtime="20200811 20:09:28.920"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_TYPE_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:09:28.921" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelType"]'.</msg>
+<status status="PASS" starttime="20200811 20:09:28.920" endtime="20200811 20:09:29.037"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:09:34.039" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:09:29.037" endtime="20200811 20:09:34.039"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_SELECT3}</arg>
+</arguments>
+<msg timestamp="20200811 20:09:34.040" level="INFO">Clicking element '//*[@id="menu-newLabelType"]/div[3]/ul/li[4]'.</msg>
+<status status="PASS" starttime="20200811 20:09:34.039" endtime="20200811 20:09:34.274"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:09:39.277" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:09:34.274" endtime="20200811 20:09:39.277"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_CREATE_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:09:39.278" level="INFO">Clicking element '//*[@id="alert-dialog-description"]/form/button[1]'.</msg>
+<status status="PASS" starttime="20200811 20:09:39.277" endtime="20200811 20:09:39.482"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:09:44.485" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:09:39.483" endtime="20200811 20:09:44.485"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_NEW_LABEL_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:09:44.486" level="INFO">Clicking element '//*[@id="panel1c-content"]/div[1]/div/button'.</msg>
+<status status="PASS" starttime="20200811 20:09:44.485" endtime="20200811 20:09:44.599"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:09:49.601" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:09:44.599" endtime="20200811 20:09:49.601"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SELECT_SECTION_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:09:49.602" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelSection"]'.</msg>
+<status status="PASS" starttime="20200811 20:09:49.601" endtime="20200811 20:09:49.724"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:09:54.726" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:09:49.724" endtime="20200811 20:09:54.726"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SECTION_TYPE3}</arg>
+</arguments>
+<msg timestamp="20200811 20:09:54.727" level="INFO">Clicking element '//*[@id="menu-newLabelSection"]/div[3]/ul/li[5]'.</msg>
+<status status="PASS" starttime="20200811 20:09:54.726" endtime="20200811 20:09:54.922"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:09:59.925" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:09:54.922" endtime="20200811 20:09:59.925"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${NAME_C}</var>
+</assign>
+<msg timestamp="20200811 20:09:59.926" level="INFO">${NAME_C} = TqnLN</msg>
+<status status="PASS" starttime="20200811 20:09:59.925" endtime="20200811 20:09:59.926"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_NAME}</arg>
+<arg>${NAME_C}</arg>
+</arguments>
+<msg timestamp="20200811 20:09:59.927" level="INFO">Typing text 'TqnLN' into text field '//*[@id="alert-dialog-description"]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20200811 20:09:59.927" endtime="20200811 20:10:00.538"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200811 20:10:03.539" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200811 20:10:00.538" endtime="20200811 20:10:03.539"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_TYPE_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:10:03.540" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelType"]'.</msg>
+<status status="PASS" starttime="20200811 20:10:03.539" endtime="20200811 20:10:03.677"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:10:08.680" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:10:03.678" endtime="20200811 20:10:08.680"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_SELECT4}</arg>
+</arguments>
+<msg timestamp="20200811 20:10:08.681" level="INFO">Clicking element '//*[@id="menu-newLabelType"]/div[3]/ul/li[5]'.</msg>
+<status status="PASS" starttime="20200811 20:10:08.680" endtime="20200811 20:10:08.879"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:10:13.882" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:10:08.879" endtime="20200811 20:10:13.882"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_CREATE_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:10:13.884" level="INFO">Clicking element '//*[@id="alert-dialog-description"]/form/button[1]'.</msg>
+<status status="PASS" starttime="20200811 20:10:13.883" endtime="20200811 20:10:14.113"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:10:19.116" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:10:14.113" endtime="20200811 20:10:19.116"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_NEW_LABEL_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:10:19.117" level="INFO">Clicking element '//*[@id="panel1c-content"]/div[1]/div/button'.</msg>
+<status status="PASS" starttime="20200811 20:10:19.116" endtime="20200811 20:10:19.265"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:10:24.268" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:10:19.266" endtime="20200811 20:10:24.268"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SELECT_SECTION_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:10:24.269" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelSection"]'.</msg>
+<status status="PASS" starttime="20200811 20:10:24.268" endtime="20200811 20:10:24.427"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:10:29.430" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:10:24.427" endtime="20200811 20:10:29.430"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SECTION_TYPE3}</arg>
+</arguments>
+<msg timestamp="20200811 20:10:29.431" level="INFO">Clicking element '//*[@id="menu-newLabelSection"]/div[3]/ul/li[5]'.</msg>
+<status status="PASS" starttime="20200811 20:10:29.430" endtime="20200811 20:10:29.652"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:10:34.655" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:10:29.652" endtime="20200811 20:10:34.655"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${NAME_C}</var>
+</assign>
+<msg timestamp="20200811 20:10:34.656" level="INFO">${NAME_C} = HrUfS</msg>
+<status status="PASS" starttime="20200811 20:10:34.655" endtime="20200811 20:10:34.656"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_NAME}</arg>
+<arg>${NAME_C}</arg>
+</arguments>
+<msg timestamp="20200811 20:10:34.656" level="INFO">Typing text 'HrUfS' into text field '//*[@id="alert-dialog-description"]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20200811 20:10:34.656" endtime="20200811 20:10:35.319"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200811 20:10:38.322" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200811 20:10:35.319" endtime="20200811 20:10:38.322"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_TYPE_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:10:38.324" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelType"]'.</msg>
+<status status="PASS" starttime="20200811 20:10:38.323" endtime="20200811 20:10:38.455"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:10:43.458" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:10:38.455" endtime="20200811 20:10:43.458"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_SELECT5}</arg>
+</arguments>
+<msg timestamp="20200811 20:10:43.459" level="INFO">Clicking element '//*[@id="menu-newLabelType"]/div[3]/ul/li[6]'.</msg>
+<status status="PASS" starttime="20200811 20:10:43.458" endtime="20200811 20:10:43.645"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:10:48.648" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:10:43.645" endtime="20200811 20:10:48.648"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_CREATE_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:10:48.649" level="INFO">Clicking element '//*[@id="alert-dialog-description"]/form/button[1]'.</msg>
+<status status="PASS" starttime="20200811 20:10:48.648" endtime="20200811 20:10:48.905"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:10:53.907" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:10:48.906" endtime="20200811 20:10:53.907"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_NEW_LABEL_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:10:53.909" level="INFO">Clicking element '//*[@id="panel1c-content"]/div[1]/div/button'.</msg>
+<status status="PASS" starttime="20200811 20:10:53.908" endtime="20200811 20:10:54.097"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:10:59.099" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:10:54.098" endtime="20200811 20:10:59.099"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SELECT_SECTION_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:10:59.100" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelSection"]'.</msg>
+<status status="PASS" starttime="20200811 20:10:59.099" endtime="20200811 20:10:59.216"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:11:04.217" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:10:59.217" endtime="20200811 20:11:04.217"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SECTION_TYPE4}</arg>
+</arguments>
+<msg timestamp="20200811 20:11:04.218" level="INFO">Clicking element '//*[@id="menu-newLabelSection"]/div[3]/ul/li[6]'.</msg>
+<status status="PASS" starttime="20200811 20:11:04.218" endtime="20200811 20:11:04.406"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:11:09.409" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:11:04.406" endtime="20200811 20:11:09.409"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${NAME_C}</var>
+</assign>
+<msg timestamp="20200811 20:11:09.410" level="INFO">${NAME_C} = jarex</msg>
+<status status="PASS" starttime="20200811 20:11:09.410" endtime="20200811 20:11:09.410"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_NAME}</arg>
+<arg>${NAME_C}</arg>
+</arguments>
+<msg timestamp="20200811 20:11:09.411" level="INFO">Typing text 'jarex' into text field '//*[@id="alert-dialog-description"]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20200811 20:11:09.411" endtime="20200811 20:11:09.978"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200811 20:11:12.979" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200811 20:11:09.978" endtime="20200811 20:11:12.979"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_TYPE_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:11:12.980" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelType"]'.</msg>
+<status status="PASS" starttime="20200811 20:11:12.980" endtime="20200811 20:11:13.111"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:11:18.113" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:11:13.111" endtime="20200811 20:11:18.113"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_SELECT1}</arg>
+</arguments>
+<msg timestamp="20200811 20:11:18.114" level="INFO">Clicking element '//*[@id="menu-newLabelType"]/div[3]/ul/li[2]'.</msg>
+<status status="PASS" starttime="20200811 20:11:18.113" endtime="20200811 20:11:18.343"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:11:23.346" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:11:18.343" endtime="20200811 20:11:23.346"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_CREATE_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:11:23.347" level="INFO">Clicking element '//*[@id="alert-dialog-description"]/form/button[1]'.</msg>
+<status status="PASS" starttime="20200811 20:11:23.347" endtime="20200811 20:11:23.546"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:11:28.548" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:11:23.546" endtime="20200811 20:11:28.548"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_NEW_LABEL_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:11:28.549" level="INFO">Clicking element '//*[@id="panel1c-content"]/div[1]/div/button'.</msg>
+<status status="PASS" starttime="20200811 20:11:28.549" endtime="20200811 20:11:28.701"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:11:33.703" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:11:28.702" endtime="20200811 20:11:33.703"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SELECT_SECTION_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:11:33.704" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelSection"]'.</msg>
+<status status="PASS" starttime="20200811 20:11:33.703" endtime="20200811 20:11:33.829"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:11:38.831" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:11:33.829" endtime="20200811 20:11:38.831"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SECTION_TYPE4}</arg>
+</arguments>
+<msg timestamp="20200811 20:11:38.832" level="INFO">Clicking element '//*[@id="menu-newLabelSection"]/div[3]/ul/li[6]'.</msg>
+<status status="PASS" starttime="20200811 20:11:38.831" endtime="20200811 20:11:39.040"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:11:44.042" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:11:39.040" endtime="20200811 20:11:44.042"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${NAME_C}</var>
+</assign>
+<msg timestamp="20200811 20:11:44.043" level="INFO">${NAME_C} = QqqPN</msg>
+<status status="PASS" starttime="20200811 20:11:44.042" endtime="20200811 20:11:44.043"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_NAME}</arg>
+<arg>${NAME_C}</arg>
+</arguments>
+<msg timestamp="20200811 20:11:44.044" level="INFO">Typing text 'QqqPN' into text field '//*[@id="alert-dialog-description"]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20200811 20:11:44.043" endtime="20200811 20:11:44.658"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200811 20:11:47.660" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200811 20:11:44.659" endtime="20200811 20:11:47.660"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_TYPE_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:11:47.661" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelType"]'.</msg>
+<status status="PASS" starttime="20200811 20:11:47.660" endtime="20200811 20:11:47.785"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:11:52.788" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:11:47.786" endtime="20200811 20:11:52.788"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_SELECT2}</arg>
+</arguments>
+<msg timestamp="20200811 20:11:52.789" level="INFO">Clicking element '//*[@id="menu-newLabelType"]/div[3]/ul/li[3]'.</msg>
+<status status="PASS" starttime="20200811 20:11:52.788" endtime="20200811 20:11:52.990"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:11:57.991" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:11:52.990" endtime="20200811 20:11:57.991"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_CREATE_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:11:57.992" level="INFO">Clicking element '//*[@id="alert-dialog-description"]/form/button[1]'.</msg>
+<status status="PASS" starttime="20200811 20:11:57.991" endtime="20200811 20:11:58.262"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:12:03.265" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:11:58.262" endtime="20200811 20:12:03.265"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_NEW_LABEL_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:12:03.266" level="INFO">Clicking element '//*[@id="panel1c-content"]/div[1]/div/button'.</msg>
+<status status="PASS" starttime="20200811 20:12:03.265" endtime="20200811 20:12:03.440"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:12:08.443" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:12:03.440" endtime="20200811 20:12:08.443"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SELECT_SECTION_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:12:08.444" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelSection"]'.</msg>
+<status status="PASS" starttime="20200811 20:12:08.443" endtime="20200811 20:12:08.562"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:12:13.565" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:12:08.563" endtime="20200811 20:12:13.565"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SECTION_TYPE4}</arg>
+</arguments>
+<msg timestamp="20200811 20:12:13.566" level="INFO">Clicking element '//*[@id="menu-newLabelSection"]/div[3]/ul/li[6]'.</msg>
+<status status="PASS" starttime="20200811 20:12:13.565" endtime="20200811 20:12:13.725"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:12:18.726" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:12:13.725" endtime="20200811 20:12:18.726"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${NAME_C}</var>
+</assign>
+<msg timestamp="20200811 20:12:18.727" level="INFO">${NAME_C} = NZSCX</msg>
+<status status="PASS" starttime="20200811 20:12:18.726" endtime="20200811 20:12:18.727"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_NAME}</arg>
+<arg>${NAME_C}</arg>
+</arguments>
+<msg timestamp="20200811 20:12:18.728" level="INFO">Typing text 'NZSCX' into text field '//*[@id="alert-dialog-description"]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20200811 20:12:18.727" endtime="20200811 20:12:19.354"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200811 20:12:22.357" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200811 20:12:19.354" endtime="20200811 20:12:22.357"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_TYPE_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:12:22.358" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelType"]'.</msg>
+<status status="PASS" starttime="20200811 20:12:22.357" endtime="20200811 20:12:22.470"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:12:27.472" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:12:22.470" endtime="20200811 20:12:27.472"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_SELECT3}</arg>
+</arguments>
+<msg timestamp="20200811 20:12:27.473" level="INFO">Clicking element '//*[@id="menu-newLabelType"]/div[3]/ul/li[4]'.</msg>
+<status status="PASS" starttime="20200811 20:12:27.473" endtime="20200811 20:12:27.686"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:12:32.687" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:12:27.686" endtime="20200811 20:12:32.687"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_CREATE_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:12:32.688" level="INFO">Clicking element '//*[@id="alert-dialog-description"]/form/button[1]'.</msg>
+<status status="PASS" starttime="20200811 20:12:32.687" endtime="20200811 20:12:32.927"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:12:37.929" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:12:32.927" endtime="20200811 20:12:37.929"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_NEW_LABEL_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:12:37.929" level="INFO">Clicking element '//*[@id="panel1c-content"]/div[1]/div/button'.</msg>
+<status status="PASS" starttime="20200811 20:12:37.929" endtime="20200811 20:12:38.025"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:12:43.026" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:12:38.026" endtime="20200811 20:12:43.026"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SELECT_SECTION_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:12:43.027" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelSection"]'.</msg>
+<status status="PASS" starttime="20200811 20:12:43.026" endtime="20200811 20:12:43.141"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:12:48.144" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:12:43.141" endtime="20200811 20:12:48.144"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SECTION_TYPE4}</arg>
+</arguments>
+<msg timestamp="20200811 20:12:48.145" level="INFO">Clicking element '//*[@id="menu-newLabelSection"]/div[3]/ul/li[6]'.</msg>
+<status status="PASS" starttime="20200811 20:12:48.144" endtime="20200811 20:12:48.326"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:12:53.328" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:12:48.326" endtime="20200811 20:12:53.328"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${NAME_C}</var>
+</assign>
+<msg timestamp="20200811 20:12:53.329" level="INFO">${NAME_C} = LMTpc</msg>
+<status status="PASS" starttime="20200811 20:12:53.328" endtime="20200811 20:12:53.329"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_NAME}</arg>
+<arg>${NAME_C}</arg>
+</arguments>
+<msg timestamp="20200811 20:12:53.329" level="INFO">Typing text 'LMTpc' into text field '//*[@id="alert-dialog-description"]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20200811 20:12:53.329" endtime="20200811 20:12:53.861"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200811 20:12:56.863" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200811 20:12:53.861" endtime="20200811 20:12:56.863"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_TYPE_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:12:56.863" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelType"]'.</msg>
+<status status="PASS" starttime="20200811 20:12:56.863" endtime="20200811 20:12:56.970"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:13:01.974" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:12:56.971" endtime="20200811 20:13:01.974"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_SELECT4}</arg>
+</arguments>
+<msg timestamp="20200811 20:13:01.975" level="INFO">Clicking element '//*[@id="menu-newLabelType"]/div[3]/ul/li[5]'.</msg>
+<status status="PASS" starttime="20200811 20:13:01.974" endtime="20200811 20:13:02.162"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:13:07.164" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:13:02.163" endtime="20200811 20:13:07.164"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_CREATE_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:13:07.164" level="INFO">Clicking element '//*[@id="alert-dialog-description"]/form/button[1]'.</msg>
+<status status="PASS" starttime="20200811 20:13:07.164" endtime="20200811 20:13:07.384"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:13:12.386" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:13:07.385" endtime="20200811 20:13:12.386"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_NEW_LABEL_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:13:12.387" level="INFO">Clicking element '//*[@id="panel1c-content"]/div[1]/div/button'.</msg>
+<status status="PASS" starttime="20200811 20:13:12.386" endtime="20200811 20:13:12.497"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:13:17.500" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:13:12.498" endtime="20200811 20:13:17.500"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SELECT_SECTION_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:13:17.501" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelSection"]'.</msg>
+<status status="PASS" starttime="20200811 20:13:17.500" endtime="20200811 20:13:17.611"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:13:22.613" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:13:17.611" endtime="20200811 20:13:22.613"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_SECTION_TYPE4}</arg>
+</arguments>
+<msg timestamp="20200811 20:13:22.615" level="INFO">Clicking element '//*[@id="menu-newLabelSection"]/div[3]/ul/li[6]'.</msg>
+<status status="PASS" starttime="20200811 20:13:22.614" endtime="20200811 20:13:22.783"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:13:27.786" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:13:22.784" endtime="20200811 20:13:27.786"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${NAME_C}</var>
+</assign>
+<msg timestamp="20200811 20:13:27.787" level="INFO">${NAME_C} = QHfHv</msg>
+<status status="PASS" starttime="20200811 20:13:27.786" endtime="20200811 20:13:27.787"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_NAME}</arg>
+<arg>${NAME_C}</arg>
+</arguments>
+<msg timestamp="20200811 20:13:27.787" level="INFO">Typing text 'QHfHv' into text field '//*[@id="alert-dialog-description"]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20200811 20:13:27.787" endtime="20200811 20:13:28.334"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200811 20:13:31.335" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200811 20:13:28.334" endtime="20200811 20:13:31.335"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_TYPE_FIELD}</arg>
+</arguments>
+<msg timestamp="20200811 20:13:31.336" level="INFO">Clicking element '//*[@id="mui-component-select-newLabelType"]'.</msg>
+<status status="PASS" starttime="20200811 20:13:31.335" endtime="20200811 20:13:31.432"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:13:36.433" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:13:31.432" endtime="20200811 20:13:36.433"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_LABEL_SELECT5}</arg>
+</arguments>
+<msg timestamp="20200811 20:13:36.434" level="INFO">Clicking element '//*[@id="menu-newLabelType"]/div[3]/ul/li[6]'.</msg>
+<status status="PASS" starttime="20200811 20:13:36.434" endtime="20200811 20:13:36.596"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:13:41.598" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:13:36.596" endtime="20200811 20:13:41.598"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${C_CREATE_BTN}</arg>
+</arguments>
+<msg timestamp="20200811 20:13:41.599" level="INFO">Clicking element '//*[@id="alert-dialog-description"]/form/button[1]'.</msg>
+<status status="PASS" starttime="20200811 20:13:41.598" endtime="20200811 20:13:41.810"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:13:46.812" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:13:41.810" endtime="20200811 20:13:46.812"></status>
+</kw>
+<status status="PASS" starttime="20200811 20:00:14.416" endtime="20200811 20:13:46.812"></status>
+</kw>
+<kw name="commonteardown" library="common" type="teardown">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200811 20:13:51.815" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200811 20:13:46.814" endtime="20200811 20:13:51.815"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200811 20:13:51.815" endtime="20200811 20:13:54.001"></status>
+</kw>
+<status status="PASS" starttime="20200811 20:13:46.813" endtime="20200811 20:13:54.001"></status>
+</kw>
+<doc>To create a new template</doc>
+<status status="PASS" starttime="20200811 19:58:22.629" endtime="20200811 20:13:54.001" critical="yes"></status>
+</test>
+<doc>To create a new template</doc>
+<status status="PASS" starttime="20200811 19:58:21.900" endtime="20200811 20:13:54.005"></status>
+</suite>
+<status status="PASS" starttime="20200811 19:58:21.846" endtime="20200811 20:13:54.009"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Createnewtemplate">Createnewtemplate</stat>
+<stat pass="1" fail="0" id="s1-s1" name="TC CT 01 GC">Createnewtemplate.TC CT 01 GC</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200811 20:00:14.418" level="WARN">Accessing variable items using '&amp;{admin_Login}[Email]' syntax is deprecated. Use '${admin_Login}[Email]' instead.</msg>
+<msg timestamp="20200811 20:00:14.948" level="WARN">Accessing variable items using '&amp;{admin_Login}[Password]' syntax is deprecated. Use '${admin_Login}[Password]' instead.</msg>
+</errors>
+</robot>

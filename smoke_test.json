@@ -1,0 +1,487 @@
+{
+	"variables": [],
+	"info": {
+		"name": "FLAIR",
+		"_postman_id": "de493f1d-6b2c-3d0b-5eb8-c19a564d7d8b",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Employee",
+			"description": "",
+			"item": [
+				{
+					"name": "inviteNewEmployee",
+					"request": {
+						"url": "https://us-central1-flair-d7b59.cloudfunctions.net/api/invitethroughtoken",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "admin@veridic.co.in eyJhbGciOiJSUzI1NiIsImtpZCI6IjVlOWVlOTdjODQwZjk3ZTAyNTM2ODhhM2I3ZTk0NDczZTUyOGE3YjUiLCJ0eXAiOiJKV1QifQ.eyJyb2xlIjoiYWRtaW4iLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZmxhaXItZDdiNTkiLCJhdWQiOiJmbGFpci1kN2I1OSIsImF1dGhfdGltZSI6MTU4NzU3NTU2OSwidXNlcl9pZCI6ImFkbWluQHZlcmlkaWMuY28uaW4iLCJzdWIiOiJhZG1pbkB2ZXJpZGljLmNvLmluIiwiaWF0IjoxNTg3NzUzNDMyLCJleHAiOjE1ODc3NTcwMzIsImVtYWlsIjoiYWRtaW5AdmVyaWRpYy5jby5pbiIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJhZG1pbkB2ZXJpZGljLmNvLmluIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.jXWjW4QuzoHUSH-mQqKa-_zbZZg36dNKWBVZ5bw-9BFpJpUWx2kstcQ-NkNymcVM1c0BfSVWBKj2U8g-UwZ7wt--s8jcSDvJDcISBvE1PxCGmTb1cLibevbFVdPBdAZ6igJWmv4AGZuvZL9Ybd8xpdW4nUN8oRYWLZQJTC9LW-iAdiS0YKjdcUVJsZspKTYmYUHEm_dEswvcZ_UgDdaZx-ZkRTXET9y0SqOdYZ_PAIsvwnpsLSDiakpPA0r6BG4BB6nd53jmGzJHHPqKrnRR9hxVijfArnlBLTuBP8oiKUYSvdVrhB1rOWbdxxaI9e3LfQz-qI4hYQPrv6BLYVigTw",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"uid\" : \"farookh5a5@sasi.ac.in\",\n\t\"type\" : \"inviteUser\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "validateInviteToken",
+					"request": {
+						"url": "https://us-central1-flair-d7b59.cloudfunctions.net/api/validateinvitetoken",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "admin@veridic.co.in eyJhbGciOiJSUzI1NiIsImtpZCI6IjVlOWVlOTdjODQwZjk3ZTAyNTM2ODhhM2I3ZTk0NDczZTUyOGE3YjUiLCJ0eXAiOiJKV1QifQ.eyJyb2xlIjoiYWRtaW4iLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZmxhaXItZDdiNTkiLCJhdWQiOiJmbGFpci1kN2I1OSIsImF1dGhfdGltZSI6MTU4NzU3NTU2OSwidXNlcl9pZCI6ImFkbWluQHZlcmlkaWMuY28uaW4iLCJzdWIiOiJhZG1pbkB2ZXJpZGljLmNvLmluIiwiaWF0IjoxNTg3NzUzNDMyLCJleHAiOjE1ODc3NTcwMzIsImVtYWlsIjoiYWRtaW5AdmVyaWRpYy5jby5pbiIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJhZG1pbkB2ZXJpZGljLmNvLmluIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.jXWjW4QuzoHUSH-mQqKa-_zbZZg36dNKWBVZ5bw-9BFpJpUWx2kstcQ-NkNymcVM1c0BfSVWBKj2U8g-UwZ7wt--s8jcSDvJDcISBvE1PxCGmTb1cLibevbFVdPBdAZ6igJWmv4AGZuvZL9Ybd8xpdW4nUN8oRYWLZQJTC9LW-iAdiS0YKjdcUVJsZspKTYmYUHEm_dEswvcZ_UgDdaZx-ZkRTXET9y0SqOdYZ_PAIsvwnpsLSDiakpPA0r6BG4BB6nd53jmGzJHHPqKrnRR9hxVijfArnlBLTuBP8oiKUYSvdVrhB1rOWbdxxaI9e3LfQz-qI4hYQPrv6BLYVigTw",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\":\"\",\n\t\"password\":\"\",\n\t\"ActionBy\":\"\",\n\t\"profileData\":\"\",\n\t\"PhotoURL\":\"\",\n\t\"token\":\"\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "updateProfile",
+					"request": {
+						"url": "https://us-central1-flair-d7b59.cloudfunctions.net/api/updateprofile",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "admin@veridic.co.in eyJhbGciOiJSUzI1NiIsImtpZCI6IjVlOWVlOTdjODQwZjk3ZTAyNTM2ODhhM2I3ZTk0NDczZTUyOGE3YjUiLCJ0eXAiOiJKV1QifQ.eyJyb2xlIjoiYWRtaW4iLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZmxhaXItZDdiNTkiLCJhdWQiOiJmbGFpci1kN2I1OSIsImF1dGhfdGltZSI6MTU4NzU3NTU2OSwidXNlcl9pZCI6ImFkbWluQHZlcmlkaWMuY28uaW4iLCJzdWIiOiJhZG1pbkB2ZXJpZGljLmNvLmluIiwiaWF0IjoxNTg3NzUzNDMyLCJleHAiOjE1ODc3NTcwMzIsImVtYWlsIjoiYWRtaW5AdmVyaWRpYy5jby5pbiIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJhZG1pbkB2ZXJpZGljLmNvLmluIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.jXWjW4QuzoHUSH-mQqKa-_zbZZg36dNKWBVZ5bw-9BFpJpUWx2kstcQ-NkNymcVM1c0BfSVWBKj2U8g-UwZ7wt--s8jcSDvJDcISBvE1PxCGmTb1cLibevbFVdPBdAZ6igJWmv4AGZuvZL9Ybd8xpdW4nUN8oRYWLZQJTC9LW-iAdiS0YKjdcUVJsZspKTYmYUHEm_dEswvcZ_UgDdaZx-ZkRTXET9y0SqOdYZ_PAIsvwnpsLSDiakpPA0r6BG4BB6nd53jmGzJHHPqKrnRR9hxVijfArnlBLTuBP8oiKUYSvdVrhB1rOWbdxxaI9e3LfQz-qI4hYQPrv6BLYVigTw",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\":\"\",\n\t\"updateValue\":{\n\t\t\"employeestatus\":\"bench\"\n\t}\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "deleteEmployee",
+					"request": {
+						"url": "https://us-central1-flair-d7b59.cloudfunctions.net/api/deleteemployee",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "admin@veridic.co.in eyJhbGciOiJSUzI1NiIsImtpZCI6IjVlOWVlOTdjODQwZjk3ZTAyNTM2ODhhM2I3ZTk0NDczZTUyOGE3YjUiLCJ0eXAiOiJKV1QifQ.eyJyb2xlIjoiYWRtaW4iLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZmxhaXItZDdiNTkiLCJhdWQiOiJmbGFpci1kN2I1OSIsImF1dGhfdGltZSI6MTU4NzU3NTU2OSwidXNlcl9pZCI6ImFkbWluQHZlcmlkaWMuY28uaW4iLCJzdWIiOiJhZG1pbkB2ZXJpZGljLmNvLmluIiwiaWF0IjoxNTg3NzUzNDMyLCJleHAiOjE1ODc3NTcwMzIsImVtYWlsIjoiYWRtaW5AdmVyaWRpYy5jby5pbiIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJhZG1pbkB2ZXJpZGljLmNvLmluIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.jXWjW4QuzoHUSH-mQqKa-_zbZZg36dNKWBVZ5bw-9BFpJpUWx2kstcQ-NkNymcVM1c0BfSVWBKj2U8g-UwZ7wt--s8jcSDvJDcISBvE1PxCGmTb1cLibevbFVdPBdAZ6igJWmv4AGZuvZL9Ybd8xpdW4nUN8oRYWLZQJTC9LW-iAdiS0YKjdcUVJsZspKTYmYUHEm_dEswvcZ_UgDdaZx-ZkRTXET9y0SqOdYZ_PAIsvwnpsLSDiakpPA0r6BG4BB6nd53jmGzJHHPqKrnRR9hxVijfArnlBLTuBP8oiKUYSvdVrhB1rOWbdxxaI9e3LfQz-qI4hYQPrv6BLYVigTw",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"employeeUID\" : \"\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "promoteEmployee",
+					"request": {
+						"url": "https://us-central1-flair-d7b59.cloudfunctions.net/api/promoteuser",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "admin@veridic.co.in eyJhbGciOiJSUzI1NiIsImtpZCI6IjVlOWVlOTdjODQwZjk3ZTAyNTM2ODhhM2I3ZTk0NDczZTUyOGE3YjUiLCJ0eXAiOiJKV1QifQ.eyJyb2xlIjoiYWRtaW4iLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZmxhaXItZDdiNTkiLCJhdWQiOiJmbGFpci1kN2I1OSIsImF1dGhfdGltZSI6MTU4NzU3NTU2OSwidXNlcl9pZCI6ImFkbWluQHZlcmlkaWMuY28uaW4iLCJzdWIiOiJhZG1pbkB2ZXJpZGljLmNvLmluIiwiaWF0IjoxNTg3NzUzNDMyLCJleHAiOjE1ODc3NTcwMzIsImVtYWlsIjoiYWRtaW5AdmVyaWRpYy5jby5pbiIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJhZG1pbkB2ZXJpZGljLmNvLmluIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.jXWjW4QuzoHUSH-mQqKa-_zbZZg36dNKWBVZ5bw-9BFpJpUWx2kstcQ-NkNymcVM1c0BfSVWBKj2U8g-UwZ7wt--s8jcSDvJDcISBvE1PxCGmTb1cLibevbFVdPBdAZ6igJWmv4AGZuvZL9Ybd8xpdW4nUN8oRYWLZQJTC9LW-iAdiS0YKjdcUVJsZspKTYmYUHEm_dEswvcZ_UgDdaZx-ZkRTXET9y0SqOdYZ_PAIsvwnpsLSDiakpPA0r6BG4BB6nd53jmGzJHHPqKrnRR9hxVijfArnlBLTuBP8oiKUYSvdVrhB1rOWbdxxaI9e3LfQz-qI4hYQPrv6BLYVigTw",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\":\"\",\n\t\"category\":\"employees\",\n\t\"privilege\":\"promote-employee\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "demoteEmployee",
+					"request": {
+						"url": "https://us-central1-flair-d7b59.cloudfunctions.net/api/demoteuser",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "admin@veridic.co.in eyJhbGciOiJSUzI1NiIsImtpZCI6IjVlOWVlOTdjODQwZjk3ZTAyNTM2ODhhM2I3ZTk0NDczZTUyOGE3YjUiLCJ0eXAiOiJKV1QifQ.eyJyb2xlIjoiYWRtaW4iLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZmxhaXItZDdiNTkiLCJhdWQiOiJmbGFpci1kN2I1OSIsImF1dGhfdGltZSI6MTU4NzU3NTU2OSwidXNlcl9pZCI6ImFkbWluQHZlcmlkaWMuY28uaW4iLCJzdWIiOiJhZG1pbkB2ZXJpZGljLmNvLmluIiwiaWF0IjoxNTg3NzUzNDMyLCJleHAiOjE1ODc3NTcwMzIsImVtYWlsIjoiYWRtaW5AdmVyaWRpYy5jby5pbiIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJhZG1pbkB2ZXJpZGljLmNvLmluIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.jXWjW4QuzoHUSH-mQqKa-_zbZZg36dNKWBVZ5bw-9BFpJpUWx2kstcQ-NkNymcVM1c0BfSVWBKj2U8g-UwZ7wt--s8jcSDvJDcISBvE1PxCGmTb1cLibevbFVdPBdAZ6igJWmv4AGZuvZL9Ybd8xpdW4nUN8oRYWLZQJTC9LW-iAdiS0YKjdcUVJsZspKTYmYUHEm_dEswvcZ_UgDdaZx-ZkRTXET9y0SqOdYZ_PAIsvwnpsLSDiakpPA0r6BG4BB6nd53jmGzJHHPqKrnRR9hxVijfArnlBLTuBP8oiKUYSvdVrhB1rOWbdxxaI9e3LfQz-qI4hYQPrv6BLYVigTw",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\":\"\",\n\t\"category\":\"employees\",\n\t\"privilege\":\"demote-employee\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "suspendEmployee",
+					"request": {
+						"url": "https://us-central1-flair-d7b59.cloudfunctions.net/api/disableuser",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "admin@veridic.co.in eyJhbGciOiJSUzI1NiIsImtpZCI6IjVlOWVlOTdjODQwZjk3ZTAyNTM2ODhhM2I3ZTk0NDczZTUyOGE3YjUiLCJ0eXAiOiJKV1QifQ.eyJyb2xlIjoiYWRtaW4iLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZmxhaXItZDdiNTkiLCJhdWQiOiJmbGFpci1kN2I1OSIsImF1dGhfdGltZSI6MTU4NzU3NTU2OSwidXNlcl9pZCI6ImFkbWluQHZlcmlkaWMuY28uaW4iLCJzdWIiOiJhZG1pbkB2ZXJpZGljLmNvLmluIiwiaWF0IjoxNTg3NzUzNDMyLCJleHAiOjE1ODc3NTcwMzIsImVtYWlsIjoiYWRtaW5AdmVyaWRpYy5jby5pbiIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJhZG1pbkB2ZXJpZGljLmNvLmluIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.jXWjW4QuzoHUSH-mQqKa-_zbZZg36dNKWBVZ5bw-9BFpJpUWx2kstcQ-NkNymcVM1c0BfSVWBKj2U8g-UwZ7wt--s8jcSDvJDcISBvE1PxCGmTb1cLibevbFVdPBdAZ6igJWmv4AGZuvZL9Ybd8xpdW4nUN8oRYWLZQJTC9LW-iAdiS0YKjdcUVJsZspKTYmYUHEm_dEswvcZ_UgDdaZx-ZkRTXET9y0SqOdYZ_PAIsvwnpsLSDiakpPA0r6BG4BB6nd53jmGzJHHPqKrnRR9hxVijfArnlBLTuBP8oiKUYSvdVrhB1rOWbdxxaI9e3LfQz-qI4hYQPrv6BLYVigTw",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\":\"\",\n\t\"category\":\"employees\",\n\t\"privilege\":\"suspend-employee\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "enableEmployee",
+					"request": {
+						"url": "https://us-central1-flair-d7b59.cloudfunctions.net/api/enableuser",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "admin@veridic.co.in eyJhbGciOiJSUzI1NiIsImtpZCI6IjVlOWVlOTdjODQwZjk3ZTAyNTM2ODhhM2I3ZTk0NDczZTUyOGE3YjUiLCJ0eXAiOiJKV1QifQ.eyJyb2xlIjoiYWRtaW4iLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZmxhaXItZDdiNTkiLCJhdWQiOiJmbGFpci1kN2I1OSIsImF1dGhfdGltZSI6MTU4NzU3NTU2OSwidXNlcl9pZCI6ImFkbWluQHZlcmlkaWMuY28uaW4iLCJzdWIiOiJhZG1pbkB2ZXJpZGljLmNvLmluIiwiaWF0IjoxNTg3NzUzNDMyLCJleHAiOjE1ODc3NTcwMzIsImVtYWlsIjoiYWRtaW5AdmVyaWRpYy5jby5pbiIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJhZG1pbkB2ZXJpZGljLmNvLmluIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.jXWjW4QuzoHUSH-mQqKa-_zbZZg36dNKWBVZ5bw-9BFpJpUWx2kstcQ-NkNymcVM1c0BfSVWBKj2U8g-UwZ7wt--s8jcSDvJDcISBvE1PxCGmTb1cLibevbFVdPBdAZ6igJWmv4AGZuvZL9Ybd8xpdW4nUN8oRYWLZQJTC9LW-iAdiS0YKjdcUVJsZspKTYmYUHEm_dEswvcZ_UgDdaZx-ZkRTXET9y0SqOdYZ_PAIsvwnpsLSDiakpPA0r6BG4BB6nd53jmGzJHHPqKrnRR9hxVijfArnlBLTuBP8oiKUYSvdVrhB1rOWbdxxaI9e3LfQz-qI4hYQPrv6BLYVigTw",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\":\"\",\n\t\"category\":\"employees\",\n\t\"privilege\":\"enable-employee\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TaskManagement",
+			"description": "",
+			"item": [
+				{
+					"name": "Task",
+					"description": "",
+					"item": [
+						{
+							"name": "newTask",
+							"request": {
+								"url": "https://us-central1-flair-d7b59.cloudfunctions.net/api/task",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "admin@veridic.co.in eyJhbGciOiJSUzI1NiIsImtpZCI6IjVlOWVlOTdjODQwZjk3ZTAyNTM2ODhhM2I3ZTk0NDczZTUyOGE3YjUiLCJ0eXAiOiJKV1QifQ.eyJyb2xlIjoiYWRtaW4iLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZmxhaXItZDdiNTkiLCJhdWQiOiJmbGFpci1kN2I1OSIsImF1dGhfdGltZSI6MTU4NzU3NTU2OSwidXNlcl9pZCI6ImFkbWluQHZlcmlkaWMuY28uaW4iLCJzdWIiOiJhZG1pbkB2ZXJpZGljLmNvLmluIiwiaWF0IjoxNTg3NzUzNDMyLCJleHAiOjE1ODc3NTcwMzIsImVtYWlsIjoiYWRtaW5AdmVyaWRpYy5jby5pbiIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJhZG1pbkB2ZXJpZGljLmNvLmluIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.jXWjW4QuzoHUSH-mQqKa-_zbZZg36dNKWBVZ5bw-9BFpJpUWx2kstcQ-NkNymcVM1c0BfSVWBKj2U8g-UwZ7wt--s8jcSDvJDcISBvE1PxCGmTb1cLibevbFVdPBdAZ6igJWmv4AGZuvZL9Ybd8xpdW4nUN8oRYWLZQJTC9LW-iAdiS0YKjdcUVJsZspKTYmYUHEm_dEswvcZ_UgDdaZx-ZkRTXET9y0SqOdYZ_PAIsvwnpsLSDiakpPA0r6BG4BB6nd53jmGzJHHPqKrnRR9hxVijfArnlBLTuBP8oiKUYSvdVrhB1rOWbdxxaI9e3LfQz-qI4hYQPrv6BLYVigTw",
+										"description": ""
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"title\":\"\",\n    \"type\":\"\",\n    \"status\":\"\",\n    \"startdate\":\"\",\n    \"enddate\":\"\",\n    \"priority\":\"\",\n    \"assignee\":[\"\"],\n    \"description\":\"\",\n    \"projectId\":\"ChcYmahBr7ZEg11X5ucP\",\n    \"category\":\"task\",\n    \"privilege\":\"new-task\"\n}"
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "updateTask",
+							"request": {
+								"url": "https://us-central1-flair-d7b59.cloudfunctions.net/api/updatetask",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"description": ""
+									},
+									{
+										"key": "Authorization",
+										"value": "admin@veridic.co.in eyJhbGciOiJSUzI1NiIsImtpZCI6IjVlOWVlOTdjODQwZjk3ZTAyNTM2ODhhM2I3ZTk0NDczZTUyOGE3YjUiLCJ0eXAiOiJKV1QifQ.eyJyb2xlIjoiYWRtaW4iLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZmxhaXItZDdiNTkiLCJhdWQiOiJmbGFpci1kN2I1OSIsImF1dGhfdGltZSI6MTU4NzU3NTU2OSwidXNlcl9pZCI6ImFkbWluQHZlcmlkaWMuY28uaW4iLCJzdWIiOiJhZG1pbkB2ZXJpZGljLmNvLmluIiwiaWF0IjoxNTg3NzUzNDMyLCJleHAiOjE1ODc3NTcwMzIsImVtYWlsIjoiYWRtaW5AdmVyaWRpYy5jby5pbiIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJhZG1pbkB2ZXJpZGljLmNvLmluIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.jXWjW4QuzoHUSH-mQqKa-_zbZZg36dNKWBVZ5bw-9BFpJpUWx2kstcQ-NkNymcVM1c0BfSVWBKj2U8g-UwZ7wt--s8jcSDvJDcISBvE1PxCGmTb1cLibevbFVdPBdAZ6igJWmv4AGZuvZL9Ybd8xpdW4nUN8oRYWLZQJTC9LW-iAdiS0YKjdcUVJsZspKTYmYUHEm_dEswvcZ_UgDdaZx-ZkRTXET9y0SqOdYZ_PAIsvwnpsLSDiakpPA0r6BG4BB6nd53jmGzJHHPqKrnRR9hxVijfArnlBLTuBP8oiKUYSvdVrhB1rOWbdxxaI9e3LfQz-qI4hYQPrv6BLYVigTw",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"title\":\"\",\n    \"type\":\"\",\n    \"status\":\"\",\n    \"startdate\":\"\",\n    \"enddate\":\"\",\n    \"priority\":\"\",\n    \"assignee\":[\"\"],\n    \"description\":\"\",\n    \"category\":\"task\",\n    \"privilege\":\"update-task\",\n    \"projectId\":\"ChcYmahBr7ZEg11X5ucP\",\n    \"taskId\":\"\"\n}"
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "newComment",
+							"request": {
+								"url": "https://us-central1-flair-d7b59.cloudfunctions.net/api/newcomment",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"description": ""
+									},
+									{
+										"key": "Authorization",
+										"value": "admin@veridic.co.in eyJhbGciOiJSUzI1NiIsImtpZCI6IjVlOWVlOTdjODQwZjk3ZTAyNTM2ODhhM2I3ZTk0NDczZTUyOGE3YjUiLCJ0eXAiOiJKV1QifQ.eyJyb2xlIjoiYWRtaW4iLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZmxhaXItZDdiNTkiLCJhdWQiOiJmbGFpci1kN2I1OSIsImF1dGhfdGltZSI6MTU4NzU3NTU2OSwidXNlcl9pZCI6ImFkbWluQHZlcmlkaWMuY28uaW4iLCJzdWIiOiJhZG1pbkB2ZXJpZGljLmNvLmluIiwiaWF0IjoxNTg3NzUzNDMyLCJleHAiOjE1ODc3NTcwMzIsImVtYWlsIjoiYWRtaW5AdmVyaWRpYy5jby5pbiIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJhZG1pbkB2ZXJpZGljLmNvLmluIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.jXWjW4QuzoHUSH-mQqKa-_zbZZg36dNKWBVZ5bw-9BFpJpUWx2kstcQ-NkNymcVM1c0BfSVWBKj2U8g-UwZ7wt--s8jcSDvJDcISBvE1PxCGmTb1cLibevbFVdPBdAZ6igJWmv4AGZuvZL9Ybd8xpdW4nUN8oRYWLZQJTC9LW-iAdiS0YKjdcUVJsZspKTYmYUHEm_dEswvcZ_UgDdaZx-ZkRTXET9y0SqOdYZ_PAIsvwnpsLSDiakpPA0r6BG4BB6nd53jmGzJHHPqKrnRR9hxVijfArnlBLTuBP8oiKUYSvdVrhB1rOWbdxxaI9e3LfQz-qI4hYQPrv6BLYVigTw",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"projectId\":\"\",\n    \"taskId\":\"\",\n    \"createdBy\":\"\",\n    \"text\":\"\",\n    \"createdByName\":\"\"\n}"
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "updateComment",
+							"request": {
+								"url": "https://us-central1-flair-d7b59.cloudfunctions.net/api/updatecomment",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"description": ""
+									},
+									{
+										"key": "Authorization",
+										"value": "admin@veridic.co.in eyJhbGciOiJSUzI1NiIsImtpZCI6IjVlOWVlOTdjODQwZjk3ZTAyNTM2ODhhM2I3ZTk0NDczZTUyOGE3YjUiLCJ0eXAiOiJKV1QifQ.eyJyb2xlIjoiYWRtaW4iLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZmxhaXItZDdiNTkiLCJhdWQiOiJmbGFpci1kN2I1OSIsImF1dGhfdGltZSI6MTU4NzU3NTU2OSwidXNlcl9pZCI6ImFkbWluQHZlcmlkaWMuY28uaW4iLCJzdWIiOiJhZG1pbkB2ZXJpZGljLmNvLmluIiwiaWF0IjoxNTg3NzUzNDMyLCJleHAiOjE1ODc3NTcwMzIsImVtYWlsIjoiYWRtaW5AdmVyaWRpYy5jby5pbiIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJhZG1pbkB2ZXJpZGljLmNvLmluIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.jXWjW4QuzoHUSH-mQqKa-_zbZZg36dNKWBVZ5bw-9BFpJpUWx2kstcQ-NkNymcVM1c0BfSVWBKj2U8g-UwZ7wt--s8jcSDvJDcISBvE1PxCGmTb1cLibevbFVdPBdAZ6igJWmv4AGZuvZL9Ybd8xpdW4nUN8oRYWLZQJTC9LW-iAdiS0YKjdcUVJsZspKTYmYUHEm_dEswvcZ_UgDdaZx-ZkRTXET9y0SqOdYZ_PAIsvwnpsLSDiakpPA0r6BG4BB6nd53jmGzJHHPqKrnRR9hxVijfArnlBLTuBP8oiKUYSvdVrhB1rOWbdxxaI9e3LfQz-qI4hYQPrv6BLYVigTw",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"projectId\":\"\",\n    \"taskId\":\"\",\n    \"text\":\"\",\n    \"id\":\"\",\n    \"createdByName\":\"\"\n}"
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "deleteComment",
+							"request": {
+								"url": "https://us-central1-flair-d7b59.cloudfunctions.net/api/deletecomment",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "admin@veridic.co.in eyJhbGciOiJSUzI1NiIsImtpZCI6IjVlOWVlOTdjODQwZjk3ZTAyNTM2ODhhM2I3ZTk0NDczZTUyOGE3YjUiLCJ0eXAiOiJKV1QifQ.eyJyb2xlIjoiYWRtaW4iLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZmxhaXItZDdiNTkiLCJhdWQiOiJmbGFpci1kN2I1OSIsImF1dGhfdGltZSI6MTU4NzU3NTU2OSwidXNlcl9pZCI6ImFkbWluQHZlcmlkaWMuY28uaW4iLCJzdWIiOiJhZG1pbkB2ZXJpZGljLmNvLmluIiwiaWF0IjoxNTg3NzUzNDMyLCJleHAiOjE1ODc3NTcwMzIsImVtYWlsIjoiYWRtaW5AdmVyaWRpYy5jby5pbiIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJhZG1pbkB2ZXJpZGljLmNvLmluIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.jXWjW4QuzoHUSH-mQqKa-_zbZZg36dNKWBVZ5bw-9BFpJpUWx2kstcQ-NkNymcVM1c0BfSVWBKj2U8g-UwZ7wt--s8jcSDvJDcISBvE1PxCGmTb1cLibevbFVdPBdAZ6igJWmv4AGZuvZL9Ybd8xpdW4nUN8oRYWLZQJTC9LW-iAdiS0YKjdcUVJsZspKTYmYUHEm_dEswvcZ_UgDdaZx-ZkRTXET9y0SqOdYZ_PAIsvwnpsLSDiakpPA0r6BG4BB6nd53jmGzJHHPqKrnRR9hxVijfArnlBLTuBP8oiKUYSvdVrhB1rOWbdxxaI9e3LfQz-qI4hYQPrv6BLYVigTw",
+										"description": ""
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"projectId\":\"\",\n    \"taskId\":\"\",\n    \"id\":\"\"\n}"
+								},
+								"description": ""
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Project",
+					"description": "",
+					"item": [
+						{
+							"name": "newProject",
+							"request": {
+								"url": "https://us-central1-flair-d7b59.cloudfunctions.net/api/project",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"description": ""
+									},
+									{
+										"key": "Authorization",
+										"value": "admin@veridic.co.in eyJhbGciOiJSUzI1NiIsImtpZCI6IjVlOWVlOTdjODQwZjk3ZTAyNTM2ODhhM2I3ZTk0NDczZTUyOGE3YjUiLCJ0eXAiOiJKV1QifQ.eyJyb2xlIjoiYWRtaW4iLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZmxhaXItZDdiNTkiLCJhdWQiOiJmbGFpci1kN2I1OSIsImF1dGhfdGltZSI6MTU4NzU3NTU2OSwidXNlcl9pZCI6ImFkbWluQHZlcmlkaWMuY28uaW4iLCJzdWIiOiJhZG1pbkB2ZXJpZGljLmNvLmluIiwiaWF0IjoxNTg3NzUzNDMyLCJleHAiOjE1ODc3NTcwMzIsImVtYWlsIjoiYWRtaW5AdmVyaWRpYy5jby5pbiIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJhZG1pbkB2ZXJpZGljLmNvLmluIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.jXWjW4QuzoHUSH-mQqKa-_zbZZg36dNKWBVZ5bw-9BFpJpUWx2kstcQ-NkNymcVM1c0BfSVWBKj2U8g-UwZ7wt--s8jcSDvJDcISBvE1PxCGmTb1cLibevbFVdPBdAZ6igJWmv4AGZuvZL9Ybd8xpdW4nUN8oRYWLZQJTC9LW-iAdiS0YKjdcUVJsZspKTYmYUHEm_dEswvcZ_UgDdaZx-ZkRTXET9y0SqOdYZ_PAIsvwnpsLSDiakpPA0r6BG4BB6nd53jmGzJHHPqKrnRR9hxVijfArnlBLTuBP8oiKUYSvdVrhB1rOWbdxxaI9e3LfQz-qI4hYQPrv6BLYVigTw",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"title\":\"\",\n    \"status\":\"\",\n    \"startdate\":\"\",\n    \"enddate\":\"\",\n    \"cid\":\"\",\n    \"Users\":[\"\"],\n    \"category\":\"taskManager\",\n    \"privilege\":\"new-project\"\n}"
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "updateProject",
+							"request": {
+								"url": "https://us-central1-flair-d7b59.cloudfunctions.net/api/updateproject",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"description": ""
+									},
+									{
+										"key": "Authorization",
+										"value": "admin@veridic.co.in eyJhbGciOiJSUzI1NiIsImtpZCI6IjVlOWVlOTdjODQwZjk3ZTAyNTM2ODhhM2I3ZTk0NDczZTUyOGE3YjUiLCJ0eXAiOiJKV1QifQ.eyJyb2xlIjoiYWRtaW4iLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZmxhaXItZDdiNTkiLCJhdWQiOiJmbGFpci1kN2I1OSIsImF1dGhfdGltZSI6MTU4NzU3NTU2OSwidXNlcl9pZCI6ImFkbWluQHZlcmlkaWMuY28uaW4iLCJzdWIiOiJhZG1pbkB2ZXJpZGljLmNvLmluIiwiaWF0IjoxNTg3NzUzNDMyLCJleHAiOjE1ODc3NTcwMzIsImVtYWlsIjoiYWRtaW5AdmVyaWRpYy5jby5pbiIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJhZG1pbkB2ZXJpZGljLmNvLmluIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.jXWjW4QuzoHUSH-mQqKa-_zbZZg36dNKWBVZ5bw-9BFpJpUWx2kstcQ-NkNymcVM1c0BfSVWBKj2U8g-UwZ7wt--s8jcSDvJDcISBvE1PxCGmTb1cLibevbFVdPBdAZ6igJWmv4AGZuvZL9Ybd8xpdW4nUN8oRYWLZQJTC9LW-iAdiS0YKjdcUVJsZspKTYmYUHEm_dEswvcZ_UgDdaZx-ZkRTXET9y0SqOdYZ_PAIsvwnpsLSDiakpPA0r6BG4BB6nd53jmGzJHHPqKrnRR9hxVijfArnlBLTuBP8oiKUYSvdVrhB1rOWbdxxaI9e3LfQz-qI4hYQPrv6BLYVigTw",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"title\":\"\",\n    \"status\":\"\",\n    \"startdate\":\"\",\n    \"enddate\":\"\",\n    \"category\":\"taskManager\",\n    \"privilege\":\"update-project\",\n    \"projectId\":\"ChcYmahBr7ZEg11X5ucP\"\n}"
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "addMemberToProject",
+							"request": {
+								"url": "https://us-central1-flair-d7b59.cloudfunctions.net/api/projects/ChcYmahBr7ZEg11X5ucP/addmember",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"description": ""
+									},
+									{
+										"key": "Authorization",
+										"value": "admin@veridic.co.in eyJhbGciOiJSUzI1NiIsImtpZCI6IjVlOWVlOTdjODQwZjk3ZTAyNTM2ODhhM2I3ZTk0NDczZTUyOGE3YjUiLCJ0eXAiOiJKV1QifQ.eyJyb2xlIjoiYWRtaW4iLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZmxhaXItZDdiNTkiLCJhdWQiOiJmbGFpci1kN2I1OSIsImF1dGhfdGltZSI6MTU4NzU3NTU2OSwidXNlcl9pZCI6ImFkbWluQHZlcmlkaWMuY28uaW4iLCJzdWIiOiJhZG1pbkB2ZXJpZGljLmNvLmluIiwiaWF0IjoxNTg3NzUzNDMyLCJleHAiOjE1ODc3NTcwMzIsImVtYWlsIjoiYWRtaW5AdmVyaWRpYy5jby5pbiIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJhZG1pbkB2ZXJpZGljLmNvLmluIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.jXWjW4QuzoHUSH-mQqKa-_zbZZg36dNKWBVZ5bw-9BFpJpUWx2kstcQ-NkNymcVM1c0BfSVWBKj2U8g-UwZ7wt--s8jcSDvJDcISBvE1PxCGmTb1cLibevbFVdPBdAZ6igJWmv4AGZuvZL9Ybd8xpdW4nUN8oRYWLZQJTC9LW-iAdiS0YKjdcUVJsZspKTYmYUHEm_dEswvcZ_UgDdaZx-ZkRTXET9y0SqOdYZ_PAIsvwnpsLSDiakpPA0r6BG4BB6nd53jmGzJHHPqKrnRR9hxVijfArnlBLTuBP8oiKUYSvdVrhB1rOWbdxxaI9e3LfQz-qI4hYQPrv6BLYVigTw",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"employeeUID\" : \"\",\n\t\"projectName\" : \"FlairTech\"\n}"
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "removeMemberFromProject",
+							"request": {
+								"url": "https://us-central1-flair-d7b59.cloudfunctions.net/api/projects/ChcYmahBr7ZEg11X5ucP/removeMember",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "admin@veridic.co.in eyJhbGciOiJSUzI1NiIsImtpZCI6IjVlOWVlOTdjODQwZjk3ZTAyNTM2ODhhM2I3ZTk0NDczZTUyOGE3YjUiLCJ0eXAiOiJKV1QifQ.eyJyb2xlIjoiYWRtaW4iLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZmxhaXItZDdiNTkiLCJhdWQiOiJmbGFpci1kN2I1OSIsImF1dGhfdGltZSI6MTU4NzU3NTU2OSwidXNlcl9pZCI6ImFkbWluQHZlcmlkaWMuY28uaW4iLCJzdWIiOiJhZG1pbkB2ZXJpZGljLmNvLmluIiwiaWF0IjoxNTg3NzUzNDMyLCJleHAiOjE1ODc3NTcwMzIsImVtYWlsIjoiYWRtaW5AdmVyaWRpYy5jby5pbiIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJhZG1pbkB2ZXJpZGljLmNvLmluIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.jXWjW4QuzoHUSH-mQqKa-_zbZZg36dNKWBVZ5bw-9BFpJpUWx2kstcQ-NkNymcVM1c0BfSVWBKj2U8g-UwZ7wt--s8jcSDvJDcISBvE1PxCGmTb1cLibevbFVdPBdAZ6igJWmv4AGZuvZL9Ybd8xpdW4nUN8oRYWLZQJTC9LW-iAdiS0YKjdcUVJsZspKTYmYUHEm_dEswvcZ_UgDdaZx-ZkRTXET9y0SqOdYZ_PAIsvwnpsLSDiakpPA0r6BG4BB6nd53jmGzJHHPqKrnRR9hxVijfArnlBLTuBP8oiKUYSvdVrhB1rOWbdxxaI9e3LfQz-qI4hYQPrv6BLYVigTw",
+										"description": ""
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"employeeUID\" : \"\",\n\t\"projectName\" : \"FlairTech\"\n}"
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "updateAccessLevels",
+							"request": {
+								"url": "https://us-central1-flair-d7b59.cloudfunctions.net/api/updateProjectAccessLevels",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"description": ""
+									},
+									{
+										"key": "Authorization",
+										"value": "admin@veridic.co.in eyJhbGciOiJSUzI1NiIsImtpZCI6IjVlOWVlOTdjODQwZjk3ZTAyNTM2ODhhM2I3ZTk0NDczZTUyOGE3YjUiLCJ0eXAiOiJKV1QifQ.eyJyb2xlIjoiYWRtaW4iLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZmxhaXItZDdiNTkiLCJhdWQiOiJmbGFpci1kN2I1OSIsImF1dGhfdGltZSI6MTU4NzU3NTU2OSwidXNlcl9pZCI6ImFkbWluQHZlcmlkaWMuY28uaW4iLCJzdWIiOiJhZG1pbkB2ZXJpZGljLmNvLmluIiwiaWF0IjoxNTg3NzUzNDMyLCJleHAiOjE1ODc3NTcwMzIsImVtYWlsIjoiYWRtaW5AdmVyaWRpYy5jby5pbiIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJhZG1pbkB2ZXJpZGljLmNvLmluIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.jXWjW4QuzoHUSH-mQqKa-_zbZZg36dNKWBVZ5bw-9BFpJpUWx2kstcQ-NkNymcVM1c0BfSVWBKj2U8g-UwZ7wt--s8jcSDvJDcISBvE1PxCGmTb1cLibevbFVdPBdAZ6igJWmv4AGZuvZL9Ybd8xpdW4nUN8oRYWLZQJTC9LW-iAdiS0YKjdcUVJsZspKTYmYUHEm_dEswvcZ_UgDdaZx-ZkRTXET9y0SqOdYZ_PAIsvwnpsLSDiakpPA0r6BG4BB6nd53jmGzJHHPqKrnRR9hxVijfArnlBLTuBP8oiKUYSvdVrhB1rOWbdxxaI9e3LfQz-qI4hYQPrv6BLYVigTw",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"uid\" : \"\",\n\t\"newAccessLevel\":{\n\t\t\"create\" : false,\n\t\t\"update\" : true,\n\t\t\"read\" : true,\n\t\t\"delete\" : false\n\t},\n\t\"projectName\" : \"FlairTech\",\n\t\"category\" : \"employees\",\n\t\"privilege\" : \"update-project-access-levels\"\n}"
+								},
+								"description": ""
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		}
+	]
+}
